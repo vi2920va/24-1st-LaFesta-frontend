@@ -1,0 +1,200 @@
+@import "../../styles/common.scss";
+
+.footer {
+  border-top: 1px solid #e5e5e5;
+
+  &-icon__list {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+
+    button {
+      @include flex-cross-center;
+      flex-direction: column;
+    }
+
+    img {
+      width: 30px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .kakao {
+    border-bottom: 1px solid #e5e5e5;
+    background: #f4f4f4;
+
+    img {
+      width: 40px;
+    }
+
+    &__title {
+      padding: 18px 0 0 0;
+      font-size: 17.5px;
+      font-weight: 700;
+    }
+
+    &__desc {
+      padding: 25px 0;
+      font-size: 13px;
+    }
+
+    button {
+      padding: 10px 31px;
+      border-radius: 22px;
+      border: 1px solid #e5e5e5;
+      font-size: 15px;
+      background: #292929;
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background: #fff;
+        color: #292929;
+      }
+    }
+  }
+
+  &-link {
+    display: flex;
+    justify-content: space-around;
+    background: #f4f4f4;
+
+    &__title {
+      padding: 35px 0 20px 0;
+      font-size: 10px;
+      font-weight: 600;
+      line-height: 1px;
+      letter-spacing: 1px;
+      color: #545454;
+    }
+
+    &-link__serive {
+      display: block;
+    }
+
+    &__list {
+      font-size: 12.5px;
+
+
+      li {
+        margin: 12px 0;
+
+        &:first-of-type {
+          margin: 0 0;
+        }
+
+        &:last-of-type {
+          margin: 0 0;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+
+  &-address {
+    display: flex;
+    border-top: 1px solid #e5e5e5;
+    font-size: 11.5px;
+    background: #f4f4f4;
+    color: #767676;
+  }
+
+  &-menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #292929;
+    padding: 30px 38px 20px 30px;
+
+    li {
+      line-height: 26px;
+
+      a::after {
+        content: "|";
+        margin: 0 10px;
+        color: #999;
+      }
+
+      &:last-of-type a::after {
+        content: "";
+      }
+    }
+  }
+
+}
+
+/* 이 코드는 799px 이하의 해상도에서 해석 */
+@media (max-width:799px) {
+  .footer {
+    &-icon__list {
+      margin-top: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      button {
+        flex: 0 0 auto;
+        width: 180px;
+        height: 87.5px;
+        color: #434343;
+      }
+    }
+
+    .kakao {
+      @include flex-cross-center;
+      flex-direction: column;
+      padding: 61px 61px 20px 61px;
+      text-align: center;
+    }
+
+    &-link__serive {
+      display: none;
+    }
+
+    .footer-address {
+      flex-direction: column;
+      padding: 30px 27px;
+
+      &__policy {
+        margin-bottom: 20px;
+      }
+    }
+
+  }
+}
+
+/* 이 코드는 800px 이상의 해상도에서 해석 */
+@media (min-width:800px) {
+  .footer {
+    &-link-wrapper {
+      display: flex;
+      justify-content: space-around;
+      background: #f4f4f4;
+
+      .kakao {
+        padding: 25px 0;
+
+        &-title-wrapper {
+          display: flex;
+        }
+
+        &__title {
+          padding: 10px 0 0 5px;
+
+        }
+
+        &__desc {
+          width: 352px;
+        }
+      }
+
+    }
+
+    &-link__serive {
+      display: none;
+    }
+  }
+}
