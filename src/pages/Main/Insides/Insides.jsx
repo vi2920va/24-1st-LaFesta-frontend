@@ -2,7 +2,12 @@ import React from 'react';
 import ListItem from './ListItem/ListItem';
 import "./Insides.scss"
 
+<<<<<<< HEAD:src/pages/Main/Insides/Insides.jsx
 function Insides({ list, count, style, ...props }) {
+=======
+function Products({ list, count, style, ...props }) {
+
+>>>>>>> main:src/pages/Products/Products.jsx
   const handleNextClick = () => {
     const { nextFunc } = props;
 
@@ -13,7 +18,11 @@ function Insides({ list, count, style, ...props }) {
 
   const hadlePrevClick = () => {
     const { prevFunc } = props;
+<<<<<<< HEAD:src/pages/Main/Insides/Insides.jsx
 
+=======
+    
+>>>>>>> main:src/pages/Products/Products.jsx
     if (!list < list.length && count > 1) {
       prevFunc(count);
     }
@@ -55,8 +64,13 @@ function Insides({ list, count, style, ...props }) {
         </ol>
       </div>
       <ul
+<<<<<<< HEAD:src/pages/Main/Insides/Insides.jsx
         className="inside-list"
         style={{ transform: `translateX(${style}px)` }}
+=======
+        className="main-products__image-slide"
+        style={{transform: `translateX(${style}px)` }}
+>>>>>>> main:src/pages/Products/Products.jsx
       >
         {list.map((item) => (
           <ListItem key={item.id} item={item} />

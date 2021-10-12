@@ -7,9 +7,13 @@ function ProductsItem({ item }) {
   return (
     <li className="products-item">
       <Link to="#">
+<<<<<<< HEAD:src/pages/Main/MainProducts/ProductsItem/ProductsItem.jsx
         <div className="products-item__image">
+=======
+         <div className="products-item__image"> 
+>>>>>>> main:src/pages/Products/ListItem/ListItem.jsx
           <img src={url} alt={title} />
-        </div>
+        </div> 
         <div className="products-content">
           <h3 className="products-item__title">{title}</h3>
         </div>
