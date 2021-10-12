@@ -1,150 +1,18 @@
 @import '../../styles/common.scss';
 
 main {
-  overflow-x: hidden;
+  // background-color: aqua;
+  // .button--details {
+  //   @include button-large;
+  //   padding: 8px 0;
+  //   border: 1px solid #545454;
+  //   background: #292929;
+  //   color: #fff;
 
-  .banner-wrapper {
-    @include flex-column-center;
-    padding: 0 0 0 70px;
-    height: 383px;
-    background: center/cover url('https://i.postimg.cc/jjdWxPMZ/background.jpg');
-    color: #292929;
-  }
-
-  .sub-title {
-    font-size: 11px;
-    font-weight: 700;
-  }
-
-  .banner-title {
-    font-family: 'Noto Sans KR';
-    font-size: 47px;
-  }
-
-  .banner-content {
-    padding-top: 5px;
-    font-size: 14px;
-    color: #292929;
-
-    p:last-of-type {
-      margin-bottom: 25px;
-    }
-  }
-
-  .button--details {
-    @include button-large;
-    padding: 8px 0;
-    border: 1px solid #545454;
-    background: #292929;
-    color: #fff;
-
-    &:hover {
-      border: 1px solid transparent;
-      background: #fff;
-      color: #292929;
-    }
-  }
-
-
-  .products-wrapper {
-    position: relative;
-    padding-left: 50px;
-    margin-bottom: 110px;
-
-    .slide-wrapper {
-      display: flex;
-      margin-top: 4.5%;
-      margin-bottom: 1%;
-      margin-right: 100px;
-    }
-
-    .products-title {
-      font-family: 'Noto Sans KR', sans-serif;
-      font-size: 25px;
-      font-weight: 600;
-    }
-  }
-
-  .collection-wrapper {
-    display: flex;
-
-
-    .cellection-content {
-      @include flex-column-center;
-      padding: 0 100px;
-      color: #545454;
-
-      .collection-title {
-        font-size: 28px;
-        font-weight: 600;
-        font-family: 'Rubik', sans-serif;
-        color: #292929;
-      }
-
-      .button--plus {
-        @include button-large;
-        margin: 15px 0 0 0;
-        padding: 6px 15px;
-        border: 1px solid #292929;
-        background: #292929;
-        color: #fff;
-
-        &:hover {
-          border: 1px solid #e5e5e5;
-          background: #fff;
-          color: #292929;
-        }
-      }
-    }
-  }
-
-  .world-wrapper {
-    padding-top: 6.5%;
-
-    .world-title {
-      font-family: 'Rubik', sans-serif;
-      margin: 20px 0 20px 82px;
-      font-size: 23px;
-    }
-
-  }
-
-  .slide-count__list {
-    @include count-text;
-
-    .button--prev {
-      margin-right: 5px;
-    }
-
-    .start--count {
-      margin-left: 10px;
-    }
-
-    .center {
-      margin: 0 5px;
-    }
-
-    .button--next {
-      margin-left: 10px;
-    }
-  }
-
-  .inside-wrapper {
-    padding: 0 80px;
-    border-bottom: 1px solid #e5e5e5;
-    background: #fffdF6;
-
-    .slide-wrapper {
-      display: flex;
-      margin: 30px 0;
-
-      .inside-title {
-        margin-left: 4px;
-        font-size: 20px;
-        font-weight: 600;
-        font-family: 'Rubik', sans-serif;
-      }
-    }
-
-  }
+  //   &:hover {
+  //     border: 1px solid transparent;
+  //     background: #fff;
+  //     color: #292929;
+  //   }
+  // }
 }
