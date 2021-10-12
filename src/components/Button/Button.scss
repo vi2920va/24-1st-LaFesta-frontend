@@ -1,0 +1,48 @@
+@import "../../styles/common.scss";
+
+.button {
+  &--details {
+    @include button-large;
+    padding: 8px 0;
+    border: 1px solid #545454;
+    background: #292929;
+    color: #fff;
+
+    &:hover {
+      border: 1px solid transparent;
+      background: #fff;
+      color: #292929;
+    }
+  }
+
+  &--plus {
+    @include button-large;
+    margin: 15px 0 0 0;
+    padding: 6px 15px;
+    border: 1px solid #292929;
+    background: #292929;
+    color: #fff;
+
+    &--white {
+      @include button-large;
+      margin: 15px 0 0 0;
+      padding: 6px 15px;
+      border: 1px solid #e5e5e5;
+      background: #fff;
+      color: #292929;
+
+      &:hover {
+        border: 1px solid #e5e5e5;
+        background: #292929;
+        color: #fff;
+      }
+    }
+
+    &:hover {
+      border: 1px solid #e5e5e5;
+      background: #fff;
+      color: #292929;
+    }
+
+  }
+}
