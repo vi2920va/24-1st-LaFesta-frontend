@@ -1,9 +1,8 @@
 import React from 'react';
 import ListItem from './ListItem/ListItem';
-import './Products.scss';
+import "./Insides.scss"
 
-function Products({ list, count, style, ...props }) {
-
+function Insides({ list, count, style, ...props }) {
   const handleNextClick = () => {
     const { nextFunc } = props;
 
@@ -14,21 +13,21 @@ function Products({ list, count, style, ...props }) {
 
   const hadlePrevClick = () => {
     const { prevFunc } = props;
-    
+
     if (!list < list.length && count > 1) {
       prevFunc(count);
     }
   };
   return (
-    <section className="main-products">
-      <div className="main-products__slide-wrapper">
-        <h3 className="main-products__title">당신만의 라페스타</h3>
-        <ol className="main-products__slide-count">
+    <section className="main-insides">
+      <div className="main-insides__slide-wrapper">
+        <h3 className="main-insides__title">Lacoste Inside</h3>
+        <ol className="main-insides__slide-count">
           <li>
             <button
               type="button"
-              className="button--prev"
-              onClick={hadlePrevClick}
+              className="butto--prev"
+              onClick={handleNextClick}
               disabled={count === 1}
             >
               <i className="fas fa-chevron-left" />
@@ -47,7 +46,7 @@ function Products({ list, count, style, ...props }) {
             <button
               type="button"
               className="button--next"
-              onClick={handleNextClick}
+              onClick={hadlePrevClick}
               disabled={count === list.length}
             >
               <i className="fas fa-chevron-right" />
@@ -56,8 +55,8 @@ function Products({ list, count, style, ...props }) {
         </ol>
       </div>
       <ul
-        className="main-products__image-slide"
-        style={{transform: `translateX(${style}px)` }}
+        className="inside-list"
+        style={{ transform: `translateX(${style}px)` }}
       >
         {list.map((item) => (
           <ListItem key={item.id} item={item} />
@@ -66,5 +65,4 @@ function Products({ list, count, style, ...props }) {
     </section>
   );
 }
-
-export default Products;
+export default Insides;

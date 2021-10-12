@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../../components/Button/Button';
 import './Banner.scss';
 
 function Banner() {
@@ -9,9 +10,7 @@ function Banner() {
       <div className="main-banner__content">
         <strong>신상품 아이템 구매시, 스포츠 텀블러 증정</strong>
         <p>~ 10월 10일까지</p>
-        <button type="button" className="button--details">
-          자세히 보기
-        </button>
+        <Button className="button--details"  name="자세히 보기"/>
       </div>
     </section>
   );

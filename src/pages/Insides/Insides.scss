@@ -1,23 +1,18 @@
 @import "../../styles/common.scss";
 
-.main-products {
+.main-insides {
   &__slide-wrapper {
     display: flex;
     align-items: center;
-    height: 120px;
-    padding: 54px 65px 25px 62px;
-
-    @media screen and(max-width: 1190px) {
-      padding-left: calc(100vw / 20);
-      padding-right: calc(100vw /40);
-    }
+    height: 100px;
+    padding: 30px 65px 25px 80px;
+    background: orange;
   }
 
   &__title {
     font-size: 27px;
     font-weight: 600;
     font-family: 'Noto Sans KR', sans-serif;
-
   }
 
   &__slide-count {
@@ -42,14 +37,8 @@
     }
   }
 
-  &__image-slide {
+  .inside-list {
     display: flex;
-    // background-color: orange;
-  }
-
-  @media screen and(max-width: 767px) {
-    &__slide-count {
-      display: none;
-    }
+    overflow-x: hidden;
   }
 }
