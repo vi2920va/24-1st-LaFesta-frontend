@@ -19,7 +19,7 @@
     @include button-large;
     margin: 15px 0 0 0;
     padding: 6px 15px;
-    border: 1px solid #292929;
+    border: 1px solid #e5e5e5;
     background: #292929;
     color: #fff;
 
@@ -32,17 +32,16 @@
       color: #292929;
 
       &:hover {
-        border: 1px solid #e5e5e5;
+        border-color: #545454;
         background: #292929;
         color: #fff;
       }
     }
 
     &:hover {
-      border: 1px solid #e5e5e5;
+      border-color: #545454;
       background: #fff;
       color: #292929;
     }
-
   }
 }
