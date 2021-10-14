@@ -1,17 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './ListItem.scss';
+import './ProductsItem.scss';
 
 function ProductsItem({ item }) {
   const { url, title } = item;
   return (
     <li className="products-item">
       <Link to="#">
-<<<<<<< HEAD:src/pages/Main/MainProducts/ProductsItem/ProductsItem.jsx
         <div className="products-item__image">
-=======
-         <div className="products-item__image"> 
->>>>>>> main:src/pages/Products/ListItem/ListItem.jsx
           <img src={url} alt={title} />
         </div> 
         <div className="products-content">

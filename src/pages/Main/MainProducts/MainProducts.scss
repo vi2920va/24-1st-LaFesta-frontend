@@ -1,28 +1,33 @@
-@import "../../styles/common.scss";
+@import "../../../styles/common.scss";
 
 .main-products {
   &__slide-wrapper {
     display: flex;
     align-items: center;
     height: 120px;
-    padding: 54px 65px 25px 62px;
+    padding: 54px 65px 25px 0;
 
     @media screen and(max-width: 1190px) {
-      padding-left: calc(100vw / 20);
       padding-right: calc(100vw /40);
     }
+
   }
 
   &__title {
-    font-size: 27px;
+    padding-left: 4.9%;
+    font-size: 26px;
     font-weight: 600;
-    font-family: 'Noto Sans KR', sans-serif;
+    color: #292929;
 
+    @media screen and(max-width: 767px) {
+      font-size: 22px;
+      padding-left: 8%;
+    }
   }
 
   &__slide-count {
     @include count-text;
-    font-size: 18px;
+    font-size: 20px;
 
     .button--prev {
       font-size: 20px;
@@ -40,16 +45,22 @@
       font-size: 20px;
       margin-left: 5px;
     }
+
+    @media screen and(max-width: 767px) {
+      display: none;
+
+    }
+  }
+
+  &__image-wrapper {
+    width: 100vw;
+    overflow: hidden;
   }
 
   &__image-slide {
     display: flex;
-    // background-color: orange;
+    width: max-content;
+
   }
 
-  @media screen and(max-width: 767px) {
-    &__slide-count {
-      display: none;
-    }
-  }
 }

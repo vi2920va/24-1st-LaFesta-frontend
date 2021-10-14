@@ -1,10 +1,6 @@
 import React from 'react';
-<<<<<<< HEAD:src/pages/Main/MainBanner/MainBanner.jsx
 import Button from '../../../components/Button/Button';
-=======
-import Button from '../../components/Button/Button';
->>>>>>> main:src/pages/Banner/Banner.jsx
-import './Banner.scss';
+import './MainBanner.scss';
 
 function MainBanner() {
   return (
