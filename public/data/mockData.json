@@ -33,31 +33,30 @@
 
   "collections": [{
       "id": 1,
-      "title": "라페스타 라이브 컬렉션",
-      "content": "신상품7%혜택",
-      "url": "https://i.postimg.cc/5NYZX27J/word-1.jpg"
+      "title": "라페스타 신발",
+      "content": "감각적인 디자인",
+      "url": "https://i.postimg.cc/9FnKZWrj/dan-edge-Be-ZGTKf-VEOs-unsplash.jpg"
     },
     {
       "id": 2,
-      "title": "유니섹스 컬렉션: 더블매치",
-      "content": "신상품7%혜택",
-      "url": "https://i.postimg.cc/15kbw12q/word-2.jpg"
+      "title": "라페스타 스포츠",
+      "content": "스타일과 편암함을 동시에",
+      "url": "https://i.postimg.cc/50rLpkvj/braden-collum-9-HI8-UJMSd-ZA-unsplash.jpg"
     },
     {
       "id": 3,
-      "title": "라코스테 신발 : 새로운 스타일",
-      "content": "신상품7%혜택",
-      "url": "https://i.postimg.cc/43ZM2bJ4/word-3.jpg"
+      "title": "라페스타 라이브",
+      "content": "라이브컬렉션",
+      "url": "https://i.postimg.cc/k4SK1vyc/robert-ruggiero-U5-HMj5-J6-Opg-unsplash.jpg"
     },
     {
       "id": 4,
-      "title": "라코스테 액세사리 : 새로운 스타일",
-      "content": "신상품7%혜택",
-      "url": "https://i.postimg.cc/528TmkWk/word-4.jpg"
+      "title": "라페스타 니트 & 가디건",
+      "content": "클래식 아이템",
+      "url": "https://i.postimg.cc/DfdbSZp8/dhruv-patel-xi-SBJmn79hk-unsplash.jpg"
     }
   ],
-  "insides":[
-    {
+  "insides": [{
       "id": 1,
       "subtitle": "3가지의 완벽한 룩",
       "title": "당신을 위한 셔츠는?",
