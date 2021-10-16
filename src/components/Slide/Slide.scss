@@ -1,0 +1,57 @@
+@import "../../styles/common.scss";
+
+.slide {
+  position: relative;
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100px;
+  }
+
+  &-title {
+    padding-left: 4.9%;
+    font-size: 24px;
+    font-weight: 600;
+    color: #292929;
+
+    @media screen and(max-width: 767px) {
+      font-size: 22px;
+      padding-left: 8%;
+    }
+  }
+
+  &-count__list {
+    @include count-text;
+    font-size: 20px;
+    padding-right: 2%;
+
+    .button--prev {
+      font-size: 20px;
+
+      @media screen and(max-width: 768px) {
+        font-size: 15px;
+      }
+    }
+
+    .start-count {
+      margin-left: 5px;
+    }
+
+    .center {
+      margin: 0 5px;
+    }
+
+    .button--next {
+      font-size: 20px;
+      margin-left: 5px;
+
+      @media screen and(max-width: 768px) {
+        position: absolute;
+        top: 100%;
+        left: 88%;
+        font-size: 15px;
+      }
+    }
+  }
+}
