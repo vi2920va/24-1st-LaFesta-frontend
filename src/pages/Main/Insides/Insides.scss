@@ -1,0 +1,33 @@
+@import "../../../styles/common.scss";
+
+.insides {
+
+  &__image-list {
+    display: flex;
+    overflow-x: hidden;
+
+    li {
+      padding: 4.5% 20% 2% 4.5%;
+
+      .insides-item__wrapper {
+        display: inline-flex;
+        width: 100vw;
+
+        .insides-item__image {
+          width: 47%;
+
+          >img {
+            width: 100%;
+          }
+        }
+
+        .insides-item__content {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding-left: 4%;
+        }
+      }
+    }
+  }
+}

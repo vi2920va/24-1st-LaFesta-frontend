@@ -1,0 +1,15 @@
+.insides-item {
+  display: flex;
+
+
+  &__image {
+
+    >img {}
+  }
+
+  &__content {}
+
+  &__sub-title {}
+
+  &_text {}
+}

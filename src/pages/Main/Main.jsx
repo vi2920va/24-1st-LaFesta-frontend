@@ -1,18 +1,20 @@
 import React from 'react';
-import MainCover from './MainCover/MainCover';
-import MainProducts from './MainProducts/MainProducts';
-import MainCollaboration from './MainCollaboration/MainCollaboration';
-import MainColletions from "./MainColletions/MainColletions";
-import './Main.scss';
+import Cover from './Cover/Cover';
+import Products from './Products/Products';
+import Banner from './Banner/Banner';
+import Collaboration from './Collaboration/Collaboration';
+import Colletions from './Colletions/Colletions';
+import Insides from './Insides/Insides';
 
 function Main() {
-
   return (
     <main>
-      <MainCover/>
-      <MainProducts />
-      <MainCollaboration />
-      <MainColletions />
+      <Cover />
+      <Products />
+      <Banner />
+      <Collaboration />
+      <Colletions />
+      <Insides />
     </main>
   );
 }
