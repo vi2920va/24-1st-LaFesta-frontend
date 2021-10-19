@@ -9,7 +9,7 @@ function ProductsItem({ item }) {
       <Link to="#">
         <div className="products-item__image">
           <img src={url} alt={title} />
-        </div> 
+        </div>
         <div className="products-content">
           <h3 className="products-item__title">{title}</h3>
         </div>

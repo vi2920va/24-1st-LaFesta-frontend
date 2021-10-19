@@ -1,22 +1,20 @@
 import React from 'react';
 import Button from '../../../components/Button/Button';
-import './MainCollaboration.scss';
+import './Collaboration.scss';
 
-function MainCollaboration() {
+function Collaboration() {
   return (
-    <section className="main-collaboration">
-      <div className="main-collaboration__image">
+    <section className="collaboration">
+      <div className="collaboration__image">
         <img
           src="https://i.postimg.cc/YCjKtS1Q/l001-story-desk-1.webp"
           alt="컬렉션"
         />
       </div>
-      <div className="main-collaboration__content">
-        <div className="main-collaboration__text">
-          <small className="main-collaboration__sub-title">
-            LACOSTE X W L001
-          </small>
-          <h2 className="main-collaboration__title">
+      <div className="collaboration__content">
+        <div className="collaboration__text">
+          <small className="collaboration__sub-title">LACOSTE X W L001</small>
+          <h2 className="collaboration__title">
             자이언티 헤이즈 콜드의 스니커즈
           </h2>
           <p>
@@ -30,4 +28,4 @@ function MainCollaboration() {
     </section>
   );
 }
-export default MainCollaboration;
+export default Collaboration;

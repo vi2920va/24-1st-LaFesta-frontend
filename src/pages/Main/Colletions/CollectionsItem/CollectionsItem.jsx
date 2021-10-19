@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../../../../components/Button/Button';
-import './collectionsItem.scss';
+import './CollectionsItem.scss';
 
-function collectionsItem({ item }) {
-  const {title, content, url } = item;
+function CollectionsItem({ item }) {
+  const { title, content, url } = item;
   return (
     <li className="collections-item">
       <Link to="#">
@@ -21,4 +21,4 @@ function collectionsItem({ item }) {
   );
 }
 
-export default collectionsItem;
+export default CollectionsItem;

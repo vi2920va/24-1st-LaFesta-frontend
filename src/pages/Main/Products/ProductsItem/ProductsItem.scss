@@ -1,24 +1,15 @@
 .products-item {
   width: calc(100vw * 0.28);
-  padding-right: 2.957%;
-
-  &:first-of-type {
-    margin-left: 2.8%;
-
-    @media screen and(max-width:1190px) {
-      margin-left: 1.57%;
-    }
-  }
+  margin-left: 2.5%;
 
   @media screen and(max-width:1190px) {
-    width: calc(100vw * 0.41);
-    padding-right: 1.99%;
+    width: calc(100vw * 0.40);
+    margin-left: 2%;
   }
-
 
   @media screen and(max-width: 768px) {
     width: calc(100vw * 0.8);
-    padding-right: 1%;
+    margin-left: 1%;
   }
 
   &__image {

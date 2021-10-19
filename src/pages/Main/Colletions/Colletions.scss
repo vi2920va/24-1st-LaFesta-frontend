@@ -1,11 +1,12 @@
-.main-collections {
+.collections {
   &__title {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 115px;
-    font-size: 26px;
+    padding-left: 4%;
     letter-spacing: 0.5px;
+    font-size: 26px;
     font-family: 'Inter',
       sans-serif;
 
