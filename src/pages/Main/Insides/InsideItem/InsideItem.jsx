@@ -4,9 +4,10 @@ import Button from '../../../../components/Button/Button';
 // import './InsideItem.scss';
 
 function InsideItem({ item }) {
-  const { title, subtitle, content, url } = item;
+  const { title, subtitle, content, url, background } = item;
+
   return (
-    <li className="insides-item">
+    <li className="insides-item" style={{ background: `${background}` }}>
       <Link to="#">
         <div className="insides-item__wrapper">
           <div className="insides-item__image">

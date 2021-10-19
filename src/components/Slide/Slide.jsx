@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Button from '../Button/Button';
 import './Slide.scss';
 
-function Slide({ title, list, children, onSlide, color }) {
+function Slide({ title, list, name, children, onSlide }) {
   const [slideCount, setSlideCount] = useState(1);
   const handleNextClick = () => {
     if (slideCount < list.length) {
@@ -21,10 +21,10 @@ function Slide({ title, list, children, onSlide, color }) {
     return null;
   }
   return (
-    <section className="slide" style={{ background: `${color}` }}>
-      <div className="slide-wrapper">
-        <h3 className="slide-title">{title}</h3>
-        <ol className="slide-count__list">
+    <section className="slide">
+      <div className={`slide-wrapper__${name}`}>
+        <h3 className={`slide-title__${name}`}>{title}</h3>
+        <ol className={`slide-count__list-${name}`}>
           <li>
             <Button
               className="button--prev"

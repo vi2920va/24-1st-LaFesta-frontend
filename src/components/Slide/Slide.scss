@@ -3,17 +3,33 @@
 .slide {
   position: relative;
 
-  &-wrapper {
+  &-wrapper__products {
+    width: 100%;
     display: flex;
     align-items: center;
     height: 100px;
   }
 
-  &-title {
+  &-wrapper__insides {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    z-index: 1;
+  }
+
+  &-title__products {
     padding-left: 4.9%;
     font-size: 24px;
     font-weight: 600;
-    color: #292929;
+    color: #292929
+  }
+
+  &-title__insides {
+    padding-left: 4.9%;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
 
     @media screen and(max-width: 767px) {
       font-size: 22px;
@@ -21,10 +37,11 @@
     }
   }
 
-  &-count__list {
+  &-count__list-products {
     @include count-text;
     font-size: 20px;
     padding-right: 2%;
+    color: #292929;
 
     .button--prev {
       font-size: 20px;
@@ -54,4 +71,41 @@
       }
     }
   }
+
+  &-count__list-insides {
+    @include count-text;
+    font-size: 20px;
+    padding-right: 2%;
+    color: #fff;
+
+    .button--prev {
+      font-size: 20px;
+
+      @media screen and(max-width: 768px) {
+        font-size: 15px;
+      }
+    }
+
+    .start-count {
+      margin-left: 5px;
+    }
+
+    .center {
+      margin: 0 5px;
+    }
+
+    .button--next {
+      font-size: 20px;
+      margin-left: 5px;
+
+      @media screen and(max-width: 768px) {
+        position: absolute;
+        top: 100%;
+        left: 88%;
+        font-size: 15px;
+      }
+    }
+  }
+
+
 }
