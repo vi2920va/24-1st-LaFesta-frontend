@@ -3,7 +3,7 @@ import Slide from '../../../components/Slide/Slide';
 import InsideItem from './InsideItem/InsideItem';
 import './Insides.scss';
 
-const largePercent = 28;
+const largePercent = 217;
 const mediumPercent = 40;
 const smallPercent = 8;
 
@@ -14,7 +14,7 @@ function Insides() {
 
   const handleSlide = (type, count) => {
     if (type === 'next') {
-      setSlideSize(largePercent * count * -1);
+      setSlideSize(largePercent * count * -10);
       if (viewSize <= 1190) {
         setSlideSize(mediumPercent * count * -1);
       }
@@ -40,14 +40,14 @@ function Insides() {
 
   return (
     <Slide
-      className="insides"
+      name="insides"
       title="LaFesta Inside"
       list={insideList}
       onSlide={handleSlide}
     >
       <ul
         className="insides__image-list"
-        style={{ transform: `translateX(${slideSize}vw)` }}
+        style={{ transform: `translateX(${slideSize}px)` }}
       >
         {insideList.map(item => (
           <InsideItem key={item.id} item={item} />
