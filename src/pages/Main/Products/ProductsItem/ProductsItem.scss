@@ -1,8 +1,8 @@
 .products-item {
-  width: calc(100vw * 0.28);
+  width: calc(100vw * 0.275);
   margin-left: 2.5%;
 
-  @media screen and(max-width:1190px) {
+  @media screen and(max-width: 1190px) {
     width: calc(100vw * 0.40);
     margin-left: 2%;
   }
