@@ -4,7 +4,7 @@
   display: flex;
   margin-top: 100px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
   }
 
@@ -14,13 +14,13 @@
     >img {
       width: 100%;
 
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 768px) {
         height: 100%;
         width: unset;
       }
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       display: flex;
       flex-basis: auto;
       justify-content: center;
@@ -37,7 +37,7 @@
     padding-right: 40px;
     color: #545454;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       flex-basis: auto;
       padding: calc(100vw / 12) calc(100vw / 25);
     }
@@ -47,7 +47,7 @@
     line-height: 25px;
     width: 55%;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       width: 100%;
     }
   }
