@@ -1,44 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import syncIcon from './images/sync.svg';
-import truckIcon from './images/truck.svg';
-import cardIcon from './images/card.svg';
-import headsetIcon from './images/headset.svg';
-import kakaoIcon from './images/kakao.svg';
+import kakaoIcon from './image/kakao.svg';
+import IconList from './IconList/IconList';
 import './Footer.scss';
 
 function Footer() {
   return (
     <footer className="footer">
-      <ul className="footer-icon__list">
-        <li>
-          <button>
-            <img src={syncIcon} alt="무료반품" />
-            <span>무료반품</span>
-          </button>
-        </li>
-        <li>
-          <button>
-            <img src={truckIcon} alt="무료배송" />
-            <span>무료배송</span>
-          </button>
-        </li>
-        <li>
-          <button>
-            <img src={cardIcon} alt="무료배송" />
-            <span>안전결제</span>
-          </button>
-        </li>
-        <li>
-          <button>
-            <img src={headsetIcon} alt="고객센터" />
-            <span>도움이 필요하세요?</span>
-          </button>
-        </li>
-      </ul>
-      <section className="footer-link-wrapper">
+      <IconList />
+      <section className="footer__link-wrapper">
         <div className="kakao">
-          <div className="kakao-title-wrapper">
+          <div className="kakao__title-wrapper">
             <img src={kakaoIcon} alt="라페스타 카카오 플러스 친구" />
             <h3 className="kakao__title">LAFESTA KAKAO FRIEND</h3>
           </div>
@@ -48,10 +20,10 @@ function Footer() {
           </p>
           <button className="button__kakao">등록하기</button>
         </div>
-        <div className="footer-link">
-          <div className="footer-link__about">
-            <h4 className="footer-link__title">ABOUT LAFESTA</h4>
-            <ul className="footer-link__list">
+        <div className="footer__link">
+          <div className="footer__link-about">
+            <h4 className="footer__link-title">ABOUT LAFESTA</h4>
+            <ul className="footer__link-list">
               <li>
                 <Link to="#">라페스타 멤버쉽</Link>
               </li>
