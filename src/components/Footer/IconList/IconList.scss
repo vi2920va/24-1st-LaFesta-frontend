@@ -6,24 +6,6 @@
 
   @media only screen and(min-width: 768px) {
     flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-around;
-    padding: 2% 0;
-  }
-
-  li {
-    width: calc(100vw / 2.5);
-    height: 93px;
-    padding: 3% 0;
-    text-align: center;
-
-    img {
-      width: 28px;
-    }
-
-    span {
-      display: block;
-      font-size: 11.5px;
-    }
+    padding: 1.5% 0;
   }
 }

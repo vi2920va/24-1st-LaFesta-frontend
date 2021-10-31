@@ -1,0 +1,26 @@
+.address{
+  padding: 5% 0 5% 8%;
+  border-top: 1px solid #e5e5e5;
+  font-size: 10px;
+  background: #f4f4f4;
+  color: #767676;
+
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    padding: 1.5% 4.5%;
+  }
+
+  &__policy{
+    margin-bottom: 3%;
+    
+    @media only screen and(min-width:768px) {
+      padding-right: 3%;
+      margin-bottom: 0;
+    }
+    
+    @media only screen and(min-width:1190px) {
+      padding-right: 15%;
+    }
+  }
+}

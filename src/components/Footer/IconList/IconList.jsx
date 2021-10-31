@@ -1,6 +1,6 @@
 import React from 'react';
 import ICON_DATA from './data/ICON_DATA';
-import IconItem from "./IconItem/IconItem";
+import IconItem from './IconItem/IconItem';
 import './IconList.scss';
 
 function IconList() {

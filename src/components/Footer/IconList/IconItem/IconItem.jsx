@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from '../../../Button/Button';
 import Modal from '../../../Modal/Modal';
 import Portal from '../../../Modal/Portal';
+import './IconItem.scss';
 
 function IconItem({ icon }) {
   const { name, image, title } = icon;
@@ -20,13 +21,13 @@ function IconItem({ icon }) {
       <li className="icon__item">
         <Button className={`button__${name}`} onClick={handleOpenModal}>
           <img src={image} alt={name} />
-          <span>{title}</span>
+          <span className="icon__item-text">{title}</span>
         </Button>
       </li>
       {
         active &&
         <Portal>
-          <Modal active={active} data={icon} onClose={handleCloseModal} />
+          <Modal data={icon} active={active} onClose={handleCloseModal} />
         </Portal>
       }
     </>

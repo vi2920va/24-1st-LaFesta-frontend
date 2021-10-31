@@ -5,10 +5,10 @@ import './Modal.scss';
 
 function Modal({ data, active, onClose }) {
 
-  const { title, description } = data;
+  const { title, description = undefined, categories } = data;
 
   const handleClose = (click) => {
-    if(onClose){
+    if (onClose) {
       onClose(!click)
 
     }
@@ -23,7 +23,14 @@ function Modal({ data, active, onClose }) {
             <img src={close} alt="close btn" />
           </Button>
           <div className="modal__wrapper-content">
-            {description.map((text, idx) => <p key={idx}>{text}</p>)}
+            {description &&
+              description.map((text, idx) => <p key={idx}>{text}</p>)}
+
+            {categories &&
+              <ul className="modal__wrapper-list">
+                {categories.map((text, idx) => <li key={idx}>{text}</li>)}
+              </ul>
+            }
           </div>
         </div>
       </div>
