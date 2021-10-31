@@ -1,0 +1,11 @@
+.icon__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 2% 0;
+
+  @media only screen and(min-width: 768px) {
+    flex-wrap: nowrap;
+    padding: 1.5% 0;
+  }
+}

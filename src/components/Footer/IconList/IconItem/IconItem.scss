@@ -1,0 +1,18 @@
+.icon__item {
+  width: calc(100vw / 2.5);
+  padding: 3% 0;
+  text-align: center;
+
+  @media only screen and(min-width:1190px) {
+    padding: 0;
+  }
+
+  img {
+    width: 28px;
+  }
+
+  &-text {
+    display: block;
+    font-size: 11.5px;
+  }
+}
