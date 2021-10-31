@@ -1,15 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Button.scss';
 
 function Button({ name, className, disabled, onClick, children }) {
   const [clicked, setClicked] = useState(false);
 
   const handleBtnClick = () => {
+    setClicked(!clicked);
+
     if (onClick) {
-      setClicked(!clicked);
-      onClick(clicked);
+      onClick(!clicked);
     }
+
   };
+
+  useEffect(() => {
+    if (clicked) {
+      setClicked(true);
+    }
+  }, [clicked]);
 
   return (
     <button
