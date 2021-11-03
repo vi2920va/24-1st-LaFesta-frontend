@@ -1,0 +1,41 @@
+.nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1% 5%;
+  line-height: 1;
+  z-index: 150;
+  background: #fff;
+
+  @media only screen and(max-width:1190px) {
+    padding: 0 0;
+  }
+
+  &__logo-link {
+    display: flex;
+    align-items: center;
+    // height: 100%;
+
+    img {
+      width: 53px;
+      height: 40px;
+
+      @media only screen and(max-width:1190px) {
+        justify-content: center;
+      }
+    }
+
+    &__title {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+
+      @media only screen and(max-width:1190px) {
+        display: none;
+      }
+    }
+  }
+}

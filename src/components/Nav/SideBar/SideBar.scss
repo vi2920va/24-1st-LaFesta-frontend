@@ -1,0 +1,23 @@
+.sidebar {
+  display: flex;
+
+  .button__cart {
+    display: flex;
+
+    &::before {
+      content: "";
+      width: 2px;
+      height: 20px;
+      margin-right: 15px;
+      background-color: #c8c8c8;
+    }
+  }
+
+  .button__menu {
+    display: none;
+
+    @media only screen and(max-width:1190px) {
+      display: block;
+    }
+  }
+}
