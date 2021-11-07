@@ -12,10 +12,8 @@
 
   &-wrapper__insides {
     display: flex;
-    position: absolute;
-    width: 100%;
-    top: 5%;
     z-index: 1;
+    background: orange;
   }
 
   &-title__products {
@@ -95,14 +93,12 @@
       font-size: 20px;
       margin-left: 5px;
 
-      @media screen and(max-width: 768px) {
-        position: absolute;
-        top: 100%;
-        left: 88%;
-        font-size: 15px;
-      }
+      // @media screen and(max-width: 768px) {
+      //   position: absolute;
+      //   top: 100%;
+      //   left: 88%;
+      //   font-size: 15px;
+      // }
     }
   }
-
-
 }
