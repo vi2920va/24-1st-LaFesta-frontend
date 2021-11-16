@@ -13,7 +13,6 @@
   &-wrapper__insides {
     display: flex;
     z-index: 1;
-    background: orange;
   }
 
   &-title__products {
@@ -92,13 +91,6 @@
     .button--next {
       font-size: 20px;
       margin-left: 5px;
-
-      // @media screen and(max-width: 768px) {
-      //   position: absolute;
-      //   top: 100%;
-      //   left: 88%;
-      //   font-size: 15px;
-      // }
     }
   }
 }

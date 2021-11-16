@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from '../Button/Button';
 import './Slide.scss';
 
 function Slide({ title, list, name, children, onSlide }) {
+  const [slideBg, setSlideBg] = useState('');
   const [slideCount, setSlideCount] = useState(1);
+
   const handleNextClick = () => {
     if (slideCount < list.length) {
       setSlideCount(prev => prev + 1);
@@ -16,12 +18,19 @@ function Slide({ title, list, name, children, onSlide }) {
       onSlide('prev', slideCount);
     }
   };
+  
+  useEffect(() => {
+    let slideItem = list.find(item => item.id === slideCount);
+    setSlideBg(slideItem && slideItem.background);
+
+  }, [list, slideCount]);
 
   if (list.length === 0) {
     return null;
   }
+
   return (
-    <section className="slide">
+    <section className="slide" style={{ background: slideBg }}>
       <div className={`slide-wrapper__${name}`}>
         <h3 className={`slide-title__${name}`}>{title}</h3>
         <ol className={`slide-count__list-${name}`}>
