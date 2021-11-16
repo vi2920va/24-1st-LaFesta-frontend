@@ -2,8 +2,8 @@
 
 .banner {
   @include flex-column-center;
-  padding: 0 0 0 70px;
   height: 383px;
+  padding: 0 0 0 70px;
   background: center/cover url('https://i.postimg.cc/jjdWxPMZ/background.jpg');
   color: #292929;
 

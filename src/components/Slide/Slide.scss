@@ -12,14 +12,11 @@
 
   &-wrapper__insides {
     display: flex;
-    position: absolute;
-    width: 100%;
-    top: 5%;
     z-index: 1;
   }
 
   &-title__products {
-    padding-left: 4.9%;
+    padding-left: 4.4%;
     font-size: 24px;
     font-weight: 600;
     color: #292929
@@ -31,7 +28,7 @@
     font-weight: 600;
     color: #fff;
 
-    @media screen and(max-width: 767px) {
+    @media screen and(max-width: 768px) {
       font-size: 22px;
       padding-left: 8%;
     }
@@ -64,10 +61,7 @@
       margin-left: 5px;
 
       @media screen and(max-width: 768px) {
-        position: absolute;
-        top: 100%;
-        left: 88%;
-        font-size: 15px;
+        font-size: 17px;
       }
     }
   }
@@ -97,15 +91,6 @@
     .button--next {
       font-size: 20px;
       margin-left: 5px;
-
-      @media screen and(max-width: 768px) {
-        position: absolute;
-        top: 100%;
-        left: 88%;
-        font-size: 15px;
-      }
     }
   }
-
-
 }
