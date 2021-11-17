@@ -1,15 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Slide from '../../../components/Slide/Slide';
 import InsideItem from './InsideItem/InsideItem';
 import './Insides.scss';
 
-// const largePercent = 217;
-// const mediumPercent = 40;
-// const smallPercent = 8;
-
 function Insides() {
-  const innerWidth = window.innerWidth;
+  const slideRef = useRef();
   const [count, setCount] = useState(1);
+  const [innerWidth, setInnerWidth] = useState(window.innerWidth);
   const [slideSize, setSlideSize] = useState(0);
   const [insideList, setInsideList] = useState([]);
 
@@ -20,9 +17,21 @@ function Insides() {
   }, []);
 
   useEffect(() => {
-    if (count > 1) {
-    }
+    const onWindowSize = () => {
+      setInnerWidth(window.innerWidth);
+    };
 
+    window.addEventListener('resize', onWindowSize);
+
+    return () => {
+      window.addEventListener('remove', onWindowSize);
+    };
+  }, []); 
+
+  useEffect(() => {
+    if (slideRef.current) {
+      setSlideSize(slideRef.current.children[0].offsetWidth * (count - 1) * -1);
+    }
   }, [count, innerWidth]);
 
   const handleSlide = (type, slideCount) => {
@@ -42,10 +51,11 @@ function Insides() {
     >
       <ul
         className="insides__image-list"
+        ref={slideRef}
         style={{ transform: `translateX(${slideSize}px)` }}
       >
         {insideList.map(item => (
-          <InsideItem item={item} />
+          <InsideItem key={item.id} item={item} />
         ))}
       </ul>
     </Slide>
