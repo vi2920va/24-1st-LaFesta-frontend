@@ -1,42 +1,46 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Slide from '../../../components/Slide/Slide';
 import InsideItem from './InsideItem/InsideItem';
 import './Insides.scss';
 
-const largePercent = 217;
-const mediumPercent = 40;
-const smallPercent = 8;
-
 function Insides() {
-  const viewSize = window.innerWidth;
+  const slideRef = useRef();
+  const [count, setCount] = useState(1);
+  const [innerWidth, setInnerWidth] = useState(window.innerWidth);
   const [slideSize, setSlideSize] = useState(0);
   const [insideList, setInsideList] = useState([]);
-
-  const handleSlide = (type, count) => {
-    if (type === 'next') {
-      setSlideSize(largePercent * count * -10);
-      if (viewSize <= 1190) {
-        setSlideSize(mediumPercent * count * -1);
-      }
-      if (viewSize <= 768) {
-        setSlideSize(smallPercent * count * -10);
-      }
-    } else {
-      setSlideSize(slideSize + largePercent);
-      if (viewSize <= 1190) {
-        setSlideSize(slideSize + mediumPercent);
-      }
-      if (viewSize <= 768) {
-        setSlideSize(slideSize + smallPercent * 10);
-      }
-    }
-  };
 
   useEffect(() => {
     fetch('/data/mockData.json')
       .then(res => res.json())
       .then(data => setInsideList(data.insides));
   }, []);
+
+  useEffect(() => {
+    const onWindowSize = () => {
+      setInnerWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', onWindowSize);
+
+    return () => {
+      window.addEventListener('remove', onWindowSize);
+    };
+  }, []); 
+
+  useEffect(() => {
+    if (slideRef.current) {
+      setSlideSize(slideRef.current.children[0].offsetWidth * (count - 1) * -1);
+    }
+  }, [count, innerWidth]);
+
+  const handleSlide = (type, slideCount) => {
+    if (type === 'next') {
+      setCount(slideCount + 1);
+    } else {
+      setCount(slideCount - 1);
+    }
+  };
 
   return (
     <Slide
@@ -47,6 +51,7 @@ function Insides() {
     >
       <ul
         className="insides__image-list"
+        ref={slideRef}
         style={{ transform: `translateX(${slideSize}px)` }}
       >
         {insideList.map(item => (
