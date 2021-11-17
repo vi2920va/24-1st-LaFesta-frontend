@@ -78,15 +78,15 @@
       "title": "라코스테의 압도적 노하우",
       "content": "생산 과정과 프랑스 공장에서 유니크한 작물까지, 라코스테의 폴로의 가장 처음을 소개합니다.",
       "url": "https://i.postimg.cc/kXr1mzKp/333.jpg",
-      "background": "#fffdf6"
+      "background": "rgb(139, 137, 121)"
     },
     {
       "id": 4,
       "subtitle": "라코스테의 비밀, 옷감",
       "title": "그를 위한 새로운 폴로셔츠",
       "content": "생산 과정과 프랑스 공장에서 유니크한 작물까지, 라코스테의 폴로의 가장 처음을 소개합니다.",
-      "url": "https://i.postimg.cc/Nf1NfDxf/444.jpg",
-      "background": "#fffdf6"
+      "url": "https://i.postimg.cc/VkmKSt79/222.jpg",
+      "background": "rgb(139, 137, 121)"
     },
     {
       "id": 5,
@@ -94,14 +94,6 @@
       "title": "라코스테 무브먼트 폴로",
       "content": "구김 방지 소재와 편안한 착용이 가능한 다기능 폴로셔츠 당신의 페이스와 스타일에 맞춰진 새로운 에센셜 디자인.",
       "url": "https://i.postimg.cc/FKKGp4X7/555.jpg",
-      "background": "#565c55"
-    },
-    {
-      "id": 6,
-      "subtitle": "움직이는 삶",
-      "title": "라코스테 무브먼트 폴로",
-      "content": "구김 방지 소재와 편안한 착용이 가능한 다기능 폴로셔츠 당신의 페이스와 스타일에 맞춰진 새로운 에센셜 디자인.",
-      "url": "https://i.postimg.cc/L5PxP3KD/666.jpg",
       "background": "#565c55"
     }
   ]
