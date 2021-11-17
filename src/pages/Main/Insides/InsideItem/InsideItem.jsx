@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../../../../components/Button/Button';
-// import './InsideItem.scss';
+import './InsideItem.scss';
 
 function InsideItem({ item }) {
   const { title, subtitle, content, url } = item;
 
   return (
-    <li className="insides-item" key={item.id}>
+    <li className="insides-item">
       <Link to="#">
         <div className="insides-item__wrapper">
           <div className="insides-item__image">

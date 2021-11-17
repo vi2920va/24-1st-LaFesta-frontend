@@ -1,32 +1,5 @@
-@import "../../../styles/common.scss";
 
-.insides {
-  &__image-list {
-    display: flex;
-
-    li {
-      padding: 5% 20% 2% 4.5%;
-
-      .insides-item__wrapper {
-        display: inline-flex;
-        width: 100vw;
-
-        .insides-item__image {
-          width: 47%;
-
-          >img {
-            width: 100%;
-          }
-        }
-
-        .insides-item__content {
-          max-width: 42%;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          padding-left: 4%;
-        }
-      }
-    }
-  }
+.insides__image-list {
+  display: flex;
+  transition: transform 0.2s ease-out 0s;
 }

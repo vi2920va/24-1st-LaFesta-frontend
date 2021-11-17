@@ -5,7 +5,7 @@ import './ProductsItem.scss';
 function ProductsItem({ item }) {
   const { url, title } = item;
   return (
-    <li className="products-item" key={item.id}>
+    <li className="products-item">
       <Link to="#">
         <div className="products-item__image">
           <img src={url} alt={title} />

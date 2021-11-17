@@ -1,7 +1,11 @@
 @import "../../styles/common.scss";
 
 .slide {
-  position: relative;
+  margin-top: 0.5%;
+
+  @media screen and(max-width:768px) {
+    margin-top: 20%;
+  }
 
   &-wrapper__products {
     width: 100%;
@@ -12,7 +16,13 @@
 
   &-wrapper__insides {
     display: flex;
+    padding-top: 2%;
     z-index: 1;
+    color: #fff;
+
+    @media screen and(max-width:768px) {
+      padding-top: 6%;
+    }
   }
 
   &-title__products {
@@ -26,7 +36,6 @@
     padding-left: 4.9%;
     font-size: 24px;
     font-weight: 600;
-    color: #fff;
 
     @media screen and(max-width: 768px) {
       font-size: 22px;
@@ -70,10 +79,13 @@
     @include count-text;
     font-size: 20px;
     padding-right: 2%;
-    color: #fff;
 
     .button--prev {
+      color: #fff;
       font-size: 20px;
+      &:disabled{
+        color: #888;
+      }
 
       @media screen and(max-width: 768px) {
         font-size: 15px;
@@ -91,6 +103,11 @@
     .button--next {
       font-size: 20px;
       margin-left: 5px;
+      color: #fff;
+
+      &:disabled{
+        color: #888;
+      }
     }
   }
 }
