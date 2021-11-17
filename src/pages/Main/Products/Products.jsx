@@ -50,13 +50,13 @@ function Products() {
         title="당신만의 라페스타"
         list={productList}
         onSlide={handleSlide} 
-        children={undefined} >
+        >
         <ul
           className="products__image-list"
           ref={slideRef}
           style={{ transform: `translateX(${slideSize}px)` }}
         >
-          {productList.map(item => <ProductsItem item={item} />
+          {productList.map(item => <ProductsItem key={item.id} item={item} />
           )}
         </ul>
       </Slide>
