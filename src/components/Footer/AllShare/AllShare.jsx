@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import {ALL_SHARE_DATA, LANGUAGE_DATA} from './data/ALL_SHARE_DATA';
 import kr from './image/kr.png';
 import Button from '../../Button/Button';
-import Modal from '../../Modal/Modal';
+import FooterModal from '../../Modal/FooterModal';
 import Portal from '../../Modal/Portal';
 import "./AllShare.scss";
 
@@ -36,7 +36,7 @@ function AllShare() {
       {
         active &&
         <Portal>
-          <Modal data={LANGUAGE_DATA} active={active} onClose={handleCloseModal} />
+          <FooterModal data={LANGUAGE_DATA} active={active} onClose={handleCloseModal} />
         </Portal>
       }
     </section>
