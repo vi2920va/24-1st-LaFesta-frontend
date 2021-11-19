@@ -4,10 +4,8 @@ import { Link } from 'react-router-dom';
 import CategoryList from './CategoryList/CategoryList';
 import ShowMenuList from './ShowMenuList/ShowMenuList';
 import logo from './images/logo.png';
-
-import './Nav.scss';
-import Button from '../Button/Button';
 import SideBar from './SideBar/SideBar';
+import './Nav.scss';
 
 function Nav() {
   const [toggleMenu, setToggleMeun] = useState('');
