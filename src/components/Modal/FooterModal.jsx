@@ -1,9 +1,9 @@
 import React from 'react';
 import Button from '../Button/Button';
 import close from './images/close.svg';
-import './Modal.scss';
+import './FooterModal.scss';
 
-function Modal({ data, active, onClose }) {
+function FooterModal({ data, active, onClose }) {
 
   const { title, description = undefined, categories } = data;
 
@@ -37,4 +37,4 @@ function Modal({ data, active, onClose }) {
     </div>
   )
 }
-export default Modal;
+export default FooterModal;

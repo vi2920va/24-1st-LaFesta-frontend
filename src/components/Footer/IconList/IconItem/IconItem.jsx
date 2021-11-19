@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Button from '../../../Button/Button';
-import Modal from '../../../Modal/Modal';
+import FooterModal from '../../../Modal/FooterModal';
 import Portal from '../../../Modal/Portal';
 import './IconItem.scss';
 
@@ -27,7 +27,7 @@ function IconItem({ icon }) {
       {
         active &&
         <Portal>
-          <Modal data={icon} active={active} onClose={handleCloseModal} />
+          <FooterModal data={icon} active={active} onClose={handleCloseModal} />
         </Portal>
       }
     </>
