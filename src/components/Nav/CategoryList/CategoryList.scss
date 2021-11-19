@@ -44,6 +44,10 @@
   .button__group {
     display: flex;
 
+    @media only screen and(max-width:1190px) {
+      display: none;
+    }
+
     button {
       padding: 0 8px;
     }
@@ -56,9 +60,6 @@
   .button__search {
     @media only screen and(max-width:1190px) {
       margin-right: auto;
-      order: -1;
     }
-
-    background: orange;
   }
 }

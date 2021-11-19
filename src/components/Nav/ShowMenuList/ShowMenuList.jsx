@@ -15,7 +15,7 @@ function ShowMenuList({ toggledMenu, onMouseLeave }) {
           <li key={idx} className="show__menu-list__item">
             <h3 className="show__menu-list__item-title">{menu.name}</h3>
             
-            <ul className="sub__menu">
+            <ul className="sub__menu" key={idx}>
               {menu.categories.map((item, idx) => (
                 <Link to="/productList">
                   <li className="sub__menu-item" key={idx}>{item.name}</li>
