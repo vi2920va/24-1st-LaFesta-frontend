@@ -48,11 +48,6 @@ const goodsCategory = [
   { name: '벨트', id: 'good3' },
 ];
 
-const collectionCategory = [
-  { name: '라이브 컬렉션', id: 'collection1' },
-  { name: '스포츠 컬렉션', id: 'collection2' },
-];
-
 const brandCategory = [
   { name: '우리는 함께 합니다.', id: 'brand1' },
   { name: '건강한 우아함', id: 'brand2' },
