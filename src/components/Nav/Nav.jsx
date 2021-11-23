@@ -9,7 +9,6 @@ import './Nav.scss';
 
 function Nav() {
   const [toggleMenu, setToggleMeun] = useState('');
-  const [isClicked, setClicked] = useState(false);
   const toggledMenu = CATEGORY_DATA.find(item => item.name === toggleMenu);
 
   const handleMouseLeave = (value) => {
@@ -18,7 +17,7 @@ function Nav() {
 
   const handleMouseOver = text => {
     setToggleMeun(text);
-  };
+  }
 
   return (
     <>
@@ -30,9 +29,10 @@ function Nav() {
           </Link>
         </div>
         <CategoryList onMouseOver={handleMouseOver} />
-        <SideBar />
+        <SideBar menu={CATEGORY_DATA} />
       </nav>
       {toggledMenu && <ShowMenuList toggledMenu={toggledMenu} onMouseLeave={handleMouseLeave} />}
+
     </>
   );
 }

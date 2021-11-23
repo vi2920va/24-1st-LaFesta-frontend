@@ -84,92 +84,51 @@ const categories = [
 export const CATEGORY_DATA = [
   {
     id: 'menu1',
-    name: 'New',
-    subMenu: [
-      {
-        id: 'menu1-1',
-        name: '남성',
-        categories: categories.map(item => ({ name: item.name, id: item.id })),
-      },
-      {
-        id: 'menu1-2',
-        name: '여성',
-        categories: categories.map(item => ({ name: item.name, id: item.id })),
-      },
-      {
-        id: 'menu1-3',
-        name: '키즈',
-        categories: [
-          { id: 'category1', name: '의류' },
-          { id: 'category2', name: '신발' }
-        ]
-      },
-      {
-        id: 'menu1-4',
-        name: 'L!VE & SPORTS',
-        categories: [
-          { id: 'category3', name: '라이브 컬렉션' },
-          { id: 'category4', name: '스포츠 컬렉션' },
-        ],
-      },
-      {
-        id: 'menu1-5',
-        name: '신상품 전체',
-        categories: [
-          { id: 'category5', name: '남성 전체' },
-          { id: 'category6', name: '여성 전체' },
-          { id: 'category7', name: '키즈 전체' },
-        ],
-      },
-    ],
-  },
-  {
-    id: 'menu2',
     name: 'Men',
     subMenu: categories,
   },
   {
-    id: 'menu3',
+    id: 'menu2',
     name: 'Women',
     subMenu: categories,
   },
   {
-    id: 'menu4',
+    id: 'menu3',
     name: 'Kids',
     subMenu: [
       {
-        id: 'menu4-1', name: '키즈 신발',
+        id: 'menu3-1', name: '키즈 신발',
         categories: [{ id: 'category8', name: '키즈 신발 전체' }]
       },
       {
-        id: 'menu4-2', name: '키즈 의류',
+        id: 'menu3-2', name: '키즈 의류',
         categories: [{ id: 'category9', name: '키즈 의류 전체' }]
       },
       {
-        id: 'menu4-3', name: '남아',
+        id: 'menu3-3', name: '남아',
         categories: [{ id: 'category10', name: '남아 의류 전체' }]
       },
       {
-        id: 'menu4-4', name: '여아',
+        id: 'menu3-4', name: '여아',
         categories: [{ id: 'category11', name: '여아 의류 전체' }]
       }
     ]
   },
   {
-    id: 'menu5',
+    id: 'menu4',
     name: 'Sale',
     subMenu: [
-      { id: 'menu5-1', name: '남성 세일', categories: clothesCategory },
-      { id: 'menu5-2', name: '여성 세일', categories: clothesCategory },
+      { id: 'menu4-1', name: '남성 세일', categories: clothesCategory },
+      { id: 'menu4-2', name: '여성 세일', categories: clothesCategory },
       {
-        id: 'menu5-3', name: '키즈 세일',
+        id: 'menu4-3', name: '키즈 세일',
         categories: [
           { id: 'category1', name: '의류' },
           { id: 'category2', name: '신발' }
         ]
       },
       {
-        id: 'menu5-4', name: 'FW20 세일',
+        id: 'menu4-4', name: 'FW20 세일',
         categories: [
           { id: 'category14', name: '남성' },
           { id: 'category15', name: '여성' },
@@ -177,7 +136,7 @@ export const CATEGORY_DATA = [
         ]
       },
       {
-        id: 'menu5-5', name: 'SS20 세일',
+        id: 'menu4-5', name: 'SS20 세일',
         categories: [
           { id: 'category14', name: '남성' },
           { id: 'category15', name: '여성' },
@@ -187,12 +146,12 @@ export const CATEGORY_DATA = [
     ],
   },
   {
-    id: 'menu6',
+    id: 'menu5',
     name: '나의 라페스타 폴로',
     subMenu: [],
   },
   {
-    id: 'menu7',
+    id: 'menu6',
     name: 'Lafesta Inside',
     subMenu: [
       { id: 'menu6-1', name: 'BRAND', categories: brandCategory },
