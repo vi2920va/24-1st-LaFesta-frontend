@@ -1,0 +1,122 @@
+.menu__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 200;
+  transform: translate3d(100%, 0, 0);
+  transition: transform 0.4s ease-out;
+  background: #fff;
+
+  &.is-active {
+    transform: translate3d(0, 0, 0);
+  }
+
+  &-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 1% 15%;
+
+    &.is-open {
+      transform: translate3d(0, 0, 0);
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      padding-bottom: 1%;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    &__title {
+      font-size: 13px;
+      padding-bottom: 1%;
+      color: #292929;
+
+      &.show__title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .home__text,
+      .show__text {
+        text-decoration: underline;
+        color: #292929;
+
+        &::after {
+          content: "/";
+          display: inline-block;
+          margin: 0 4px;
+          color: #c8c8c8;
+        }
+      }
+    }
+  }
+
+  &-footer {
+    width: 100%;
+    height: 100%;
+    // border-top: 1px solid #f4f4f4;
+    // border-bottom: 1px solid #f4f4f4;
+
+    li {
+      border-top: 1px solid #f4f4f4;
+      border-bottom: 1px solid #f4f4f4;
+      i {
+        width: 30px;
+        margin: 0 15px;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        padding: 2% 12.5%;
+      }
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 19px;
+
+
+    &__close {
+      display: none;
+    }
+
+    &__item {
+      display: flex;
+      padding: 1.5% 0;
+
+      img {
+        width: 20px;
+        height: 18px;
+        margin-left: auto;
+      }
+    }
+  }
+
+  .button__arrow {
+
+    >img {
+      width: 20px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .button__close {
+    margin-left: auto;
+
+    >img {
+      width: 15px;
+    }
+  }
+
+}

@@ -29,7 +29,7 @@ function CategoryList({ onMouseOver }) {
           <img src={search} alt="search" />
         </Button>
       </div>
-
+      
       <div className="button__group">
         <Button className="button__loaction">
           <img src={location} alt="loaction" />
