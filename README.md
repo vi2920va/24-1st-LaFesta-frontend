@@ -8,6 +8,10 @@
 
 `npm run start`
 
+## 프로젝트 링크
+
+[프로젝트 링크 바로가기](https://lafesta.netlify.app/)
+
 ## 적용 기술
 
 - React.js(Hooks)
