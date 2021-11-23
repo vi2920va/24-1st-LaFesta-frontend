@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 import close from './images/close.svg';
 import rightBtn from './images/right-btn.png';
 import arrowBtn from './images/arrow-btn.svg';
-import headset from '../Footer/IconList/data/images/headset.svg';
-import user from "./images/user.png";
 import "./MenuModal.scss";
 
 function MenuModal({ active, onClose, menu }) {
