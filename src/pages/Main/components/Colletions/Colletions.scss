@@ -2,8 +2,7 @@
   &__title {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    height: 115px;
+    margin-top: 5%;
     padding-left: 4%;
     letter-spacing: 0.5px;
     font-size: 26px;
@@ -11,8 +10,9 @@
       sans-serif;
 
     @media screen and (max-width: 1190px) {
+      padding: 0 0 0.5% 4%;
       font-size: 22px;
-      padding: 0 0 0 4%;
+      font-weight: 600;
     }
 
     @media screen and (max-width: 768px) {
