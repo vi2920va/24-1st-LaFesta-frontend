@@ -8,10 +8,9 @@
   }
 
   &-wrapper__products {
-    width: 100%;
     display: flex;
     align-items: center;
-    height: 100px;
+    margin: 5% 0 3% 0;
   }
 
   &-wrapper__insides {
@@ -46,7 +45,7 @@
   &-count__list-products {
     @include count-text;
     font-size: 20px;
-    padding-right: 2%;
+    padding-right: 4%;
     color: #292929;
 
     .button--prev {
