@@ -1,5 +1,6 @@
 {
-  "products": [{
+  "products": [
+    {
       "id": 1,
       "title": "그를 위한 새로운 폴로셔츠",
       "url": "https://i.postimg.cc/kGJsmf2w/2-product-1.jpg"
@@ -30,33 +31,34 @@
       "url": "https://i.postimg.cc/R0n47TVP/produt-6.jpg"
     }
   ],
-
-  "collections": [{
+  "collections": [
+    {
       "id": 1,
       "title": "라페스타 신발",
       "content": "감각적인 디자인",
-      "url": "https://i.postimg.cc/RhqMqD1c/daniel-lincoln-vxk-De-Yx97-Dk-unsplash.jpg"
+      "url": "https://i.postimg.cc/FRMvHvDx/photo-1512412046876-f386342eddb3.jpg"
     },
     {
       "id": 2,
       "title": "라페스타 스포츠",
       "content": "스타일과 편암함을 동시에",
-      "url": "https://i.postimg.cc/RhqMqD1c/daniel-lincoln-vxk-De-Yx97-Dk-unsplash.jpg"
+      "url": "https://i.postimg.cc/FRMvHvDx/photo-1512412046876-f386342eddb3.jpg"
     },
     {
       "id": 3,
       "title": "라페스타 라이브",
       "content": "라이브컬렉션",
-      "url": "https://i.postimg.cc/RhqMqD1c/daniel-lincoln-vxk-De-Yx97-Dk-unsplash.jpg"
+      "url": "https://i.postimg.cc/FRMvHvDx/photo-1512412046876-f386342eddb3.jpg"
     },
     {
       "id": 4,
       "title": "라페스타 니트 & 가디건",
       "content": "클래식 아이템",
-      "url": "https://i.postimg.cc/RhqMqD1c/daniel-lincoln-vxk-De-Yx97-Dk-unsplash.jpg"
+      "url": "https://i.postimg.cc/FRMvHvDx/photo-1512412046876-f386342eddb3.jpg"
     }
   ],
-  "insides": [{
+  "insides": [
+    {
       "id": 1,
       "subtitle": "3가지의 완벽한 룩",
       "title": "당신을 위한 셔츠는?",
