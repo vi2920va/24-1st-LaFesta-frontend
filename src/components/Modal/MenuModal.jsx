@@ -1,11 +1,7 @@
 import React, { useState } from 'react'
 import Button from '../Button/Button';
 import { Link } from 'react-router-dom';
-import close from './images/close.svg';
-import rightBtn from './images/right-btn.png';
 import arrowBtn from './images/arrow-btn.svg';
-import headset from '../Footer/IconList/data/images/headset.svg';
-import user from "./images/user.png";
 import "./MenuModal.scss";
 
 function MenuModal({ active, onClose, menu }) {
@@ -54,14 +50,14 @@ function MenuModal({ active, onClose, menu }) {
             <span>{subTitle !== '' ? `${subTitle}` : ''}</span>
           </h3>
           <Button className="button__close" onClick={handleClose}>
-            <img src={close} alt="close btn" />
+            <i className="fas fa-times" />
           </Button>
         </div>
         <ul className="menu__modal-list">
           {!showTitle && menu.map(data => (
             <li key={data.id} className="menu__modal-list__item" onClick={handleMenuClick} role="button" >
               <span>{data.name}</span>
-              <img src={rightBtn} alt="right button" name={data.name} />
+              <i className="fas fa-chevron-right" name={data.name} />
             </li>)
           )}
           {toggleMenu &&
@@ -69,7 +65,7 @@ function MenuModal({ active, onClose, menu }) {
               {toggleMenu.subMenu.map((menu, idx) => (
                 <li className='menu__modal-list__item' key={idx} onClick={handleMenuClick} role="button">
                   <span>{menu.name}</span>
-                  <img src={rightBtn} alt="right button" name={menu.name} />
+                  <i className="fas fa-chevron-right" name={menu.name} />
                 </li>
               ))}
             </ul>

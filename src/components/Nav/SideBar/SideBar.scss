@@ -3,6 +3,9 @@
 
   .button__cart {
     display: flex;
+    font-size: 21px;
+    padding: 2% 1%;
+
 
     &::before {
       content: "";
@@ -23,6 +26,7 @@
     @media only screen and(max-width:1190px) {
       display: block;
       margin-left: 15px;
+      font-size: 21px;
     }
   }
 }
