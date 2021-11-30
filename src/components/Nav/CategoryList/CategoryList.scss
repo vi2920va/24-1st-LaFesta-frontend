@@ -49,17 +49,21 @@
     }
 
     button {
+      font-size: 21px;
       padding: 0 8px;
-    }
-
-    img {
-      width: 22px;
     }
   }
 
   .button__search {
+    padding: 2% 1%;
+    font-size: 21px;
+    font-weight: 600;
+    color: #292929;
+
+
     @media only screen and(max-width:1190px) {
       margin-right: auto;
+      font-size: 20px;
     }
   }
 }

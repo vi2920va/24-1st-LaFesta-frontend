@@ -40,10 +40,10 @@ function SideBar({ menu }) {
     <>
       <div className="sidebar">
         <Button className="button__cart">
-          <img src={cart} alt="cart" />
+          <i className="fas fa-shopping-cart" />
         </Button>
         <Button className="button__menu" onClick={handleOpenMenu}>
-          <img src={sidebar} alt="menu" />
+          <i className="fas fa-bars" />
         </Button>
       </div>
       <Portal>

@@ -2,9 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { CATEGORY_DATA } from './data/CATEGORY_DATA';
 import Button from '../../Button/Button';
-import search from './images/search.svg';
 import location from './images/location.svg';
-import user from './images/user.svg';
+// import user from './images/user.svg';
 import './CategoryList.scss';
 
 function CategoryList({ onMouseOver }) {
@@ -26,16 +25,16 @@ function CategoryList({ onMouseOver }) {
           )}
         </ul>
         <Button className="button__search">
-          <img src={search} alt="search" />
+          <i className="fas fa-search" />
         </Button>
       </div>
-      
+
       <div className="button__group">
         <Button className="button__loaction">
-          <img src={location} alt="loaction" />
+          <i className="fas fa-map-marker-alt" />
         </Button>
         <Button className="button__user">
-          <img src={user} alt="user" />
+          <i className="far fa-user" />
         </Button>
       </div>
     </div>
