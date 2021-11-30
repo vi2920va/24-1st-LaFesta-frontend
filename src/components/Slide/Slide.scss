@@ -10,7 +10,7 @@
   &-wrapper__products {
     display: flex;
     align-items: center;
-    margin: 5% 0 3% 0;
+    margin: 5% 0 2.5% 0;
   }
 
   &-wrapper__insides {
@@ -28,7 +28,11 @@
     padding-left: 4.4%;
     font-size: 24px;
     font-weight: 600;
-    color: #292929
+    color: #292929;
+
+    @media screen and(max-width:768px) {
+      font-size: 21px;
+    }
   }
 
   &-title__insides {
@@ -58,6 +62,7 @@
 
     .start-count {
       margin-left: 5px;
+
     }
 
     .center {
