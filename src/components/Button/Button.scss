@@ -3,8 +3,8 @@
 .button {
   &--details {
     @include button-large;
-    padding: 8px 0;
-    border: 1px solid #545454;
+    padding: 0.5em 0;
+    border: 0.063em solid #545454;
     background: #292929;
     color: #fff;
 
@@ -17,17 +17,17 @@
 
   &--plus {
     @include button-large;
-    margin: 15px 0 0 0;
-    padding: 6px 15px;
-    border: 1px solid #e5e5e5;
+    margin: 0.938em 0 0 0;
+    padding: 0.375em 0.938em;
+    border: 0.063em solid #e5e5e5;
     background: #292929;
     color: #fff;
 
     &--white {
       @include button-large;
-      margin: 15px 0 0 0;
-      padding: 6px 15px;
-      border: 1px solid #e5e5e5;
+      margin: 0.938em 0 0 0;
+      padding: 0.375em 0.938em;
+      border: 0.063em solid #e5e5e5;
       background: #fff;
       color: #292929;
 

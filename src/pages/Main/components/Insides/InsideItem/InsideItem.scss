@@ -49,26 +49,26 @@
   }
 
   &__sub-title {
-    line-height: 20px;
-    letter-spacing: 1.5px;
+    line-height: 1.250em;
+    letter-spacing: 0.094em;
     font-weight: 600;
-    font-size: 10px;
+    font-size: 0.625em;
     color: #fff;
   }
 
   &__title {
-    font-size: 26px;
+    font-size: 1.625em;
     font-weight: 600;
     color: #fff;
 
     @media screen and(max-width:1190px) {
-      font-size: 25px;
+      font-size: 1.563em;
     }
   }
 
   &__text {
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 0.938em;
+    line-height: 1.563em;
     color: #fff;
   }
 }

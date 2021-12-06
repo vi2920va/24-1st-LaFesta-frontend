@@ -2,28 +2,28 @@
 
 .banner {
   @include flex-column-center;
-  height: 383px;
-  padding: 0 0 0 70px;
+  height: 27.357em;
+  padding: 0 0 0 5.000em;
   background: center/cover url('https://i.postimg.cc/jjdWxPMZ/background.jpg');
   color: #292929;
 
   &__sub-title {
-    font-size: 11px;
+    font-size: 1em;
     font-weight: 700;
   }
 
   &__title {
     font-family: 'Noto Sans KR';
-    font-size: 47px;
+    font-size: 4.273em;
   }
 
   &__content {
-    padding-top: 5px;
-    font-size: 14px;
+    padding-top: 0.455em;
+    font-size: 0.875em;
     color: #292929;
 
     p:last-of-type {
-      margin-bottom: 25px;
+      margin-bottom: 1.667em;
     }
   }
 }

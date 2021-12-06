@@ -2,7 +2,7 @@
 
 .collaboration {
   display: flex;
-  margin-top: 100px;
+  margin-top: 6.250em;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -34,7 +34,7 @@
     flex: 1 1 45%;
     justify-content: center;
     align-items: center;
-    padding-right: 40px;
+    padding-right: 2.5em;
     color: #545454;
 
     @media screen and (max-width: 768px) {
@@ -44,7 +44,7 @@
   }
 
   &__text {
-    line-height: 25px;
+    line-height: 1.563em;
     width: 55%;
 
     @media screen and (max-width: 768px) {
@@ -53,16 +53,16 @@
   }
 
   &__sub-title {
-    letter-spacing: 1.5px;
-    line-height: 20px;
-    font-size: 10px;
+    letter-spacing: 0.094em;
+    line-height: 1.250em;
+    font-size: 0.625em;
     font-weight: 600;
     color: #767676;
   }
 
   &__title {
-    line-height: 36px;
-    font-size: 26px;
+    line-height: 2.250em;
+    font-size: 1.625em;
     font-weight: 600;
     color: #000;
   }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import Button from '../Button/Button';
 import './Slide.scss';
 
@@ -18,7 +19,7 @@ function Slide({ title, list, name, children, onSlide }) {
       onSlide('prev', slideCount);
     }
   };
-  
+
   useEffect(() => {
     let slideItem = list.find(item => item.id === slideCount);
     setSlideBg(slideItem && slideItem.background);
@@ -40,17 +41,15 @@ function Slide({ title, list, name, children, onSlide }) {
               disabled={slideCount === 1}
               onClick={hadlePrevClick}
             >
-              <i className="fas fa-chevron-left" />
+              <FiChevronLeft />
             </Button>
           </li>
-          <li className="start-count">
-            <span>{slideCount}</span>
-          </li>
-          <li className="center">
-            <span>/</span>
-          </li>
-          <li className="end-count">
-            <span>{list.length}</span>
+          <li className="count--item">
+            <div className="count--item__text">
+              <span>{slideCount}</span>
+              <span>/</span>
+              <span>{list.length}</span>
+            </div>
           </li>
           <li>
             <Button
@@ -58,7 +57,7 @@ function Slide({ title, list, name, children, onSlide }) {
               onClick={handleNextClick}
               disabled={slideCount === list.length}
             >
-              <i className="fas fa-chevron-right" />
+              <FiChevronRight />
             </Button>
           </li>
         </ol>

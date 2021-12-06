@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import Slide from '../../../../components/Slide/Slide';
 import ProductsItem from './ProductsItem/ProductsItem';
 import './Products.scss';
+// 아이템에서 이미지의 넓이 또는 이미지의 높이가 큰 지 어떻게 비교할 것인가 ?
 
 function Products() {
 
@@ -50,6 +51,7 @@ function Products() {
         title="당신만의 라페스타"
         list={productList}
         onSlide={handleSlide}
+
       >
         <ul
           className="products__image-list"
