@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Button from '../Button/Button';
 import { Link } from 'react-router-dom';
-import arrowBtn from './images/arrow-btn.svg';
+import { FiX, FiChevronRight } from 'react-icons/fi';
 import "./MenuModal.scss";
 
 function MenuModal({ active, onClose, menu }) {
@@ -41,7 +41,7 @@ function MenuModal({ active, onClose, menu }) {
         <div className={`menu__modal-wrapper__header`}>
           {showTitle &&
             <Button className="button__arrow" onClick={handlePrevMenu}>
-              <img src={arrowBtn} alt="arrow btn" />
+              <FiChevronRight />
             </Button>
           }
           <h3 className={`menu__modal-wrapper__title ${showTitle && 'show__title'}`}>
@@ -50,14 +50,14 @@ function MenuModal({ active, onClose, menu }) {
             <span>{subTitle !== '' ? `${subTitle}` : ''}</span>
           </h3>
           <Button className="button__close" onClick={handleClose}>
-            <i className="fas fa-times" />
+            <FiX />
           </Button>
         </div>
         <ul className="menu__modal-list">
           {!showTitle && menu.map(data => (
             <li key={data.id} className="menu__modal-list__item" onClick={handleMenuClick} role="button" >
               <span>{data.name}</span>
-              <i className="fas fa-chevron-right" name={data.name} />
+              <FiChevronRight name={data.name} />
             </li>)
           )}
           {toggleMenu &&
@@ -65,7 +65,7 @@ function MenuModal({ active, onClose, menu }) {
               {toggleMenu.subMenu.map((menu, idx) => (
                 <li className='menu__modal-list__item' key={idx} onClick={handleMenuClick} role="button">
                   <span>{menu.name}</span>
-                  <i className="fas fa-chevron-right" name={menu.name} />
+                  <FiChevronRight name={menu.name} />
                 </li>
               ))}
             </ul>

@@ -67,7 +67,7 @@
       border-top: 1px solid #f4f4f4;
       border-bottom: 1px solid #f4f4f4;
 
-      i {
+      svg {
         width: 30px;
         margin: 0 15px;
       }
@@ -94,18 +94,19 @@
 
     &__item {
       display: flex;
+      align-items: center;
       padding: 4% 2%;
       color: #000;
 
       &:nth-of-type(5n) {
         font-weight: 500;
 
-        i {
+        svg {
           display: none;
         }
       }
 
-      i {
+      svg {
         margin-left: auto;
         font-size: 21px;
         color: #292929;
@@ -115,8 +116,9 @@
   }
 
   .button__arrow {
+    margin-left: auto;
 
-    >img {
+    >svg {
       width: 20px;
       transform: rotate(180deg);
     }
@@ -125,7 +127,7 @@
   .button__close {
     margin-left: auto;
 
-    i {
+    svg {
       font-size: 21px;
     }
   }

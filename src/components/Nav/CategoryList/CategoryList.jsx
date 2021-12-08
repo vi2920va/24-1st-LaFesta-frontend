@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CATEGORY_DATA } from './data/CATEGORY_DATA';
+import { FiUser, FiSearch, FiMapPin } from 'react-icons/fi';
 import Button from '../../Button/Button';
 import './CategoryList.scss';
 
@@ -23,16 +24,16 @@ function CategoryList({ onMouseOver }) {
           )}
         </ul>
         <Button className="button__search">
-          <i className="fas fa-search" />
+          <FiSearch />
         </Button>
       </div>
 
       <div className="button__group">
         <Button className="button__loaction">
-          <i className="fas fa-map-marker-alt" />
+          <FiMapPin />
         </Button>
         <Button className="button__user">
-          <i className="far fa-user" />
+          <FiUser />
         </Button>
       </div>
     </div>
