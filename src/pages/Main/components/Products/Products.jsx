@@ -3,10 +3,6 @@ import Slide from '../../../../components/Slide/Slide';
 import ProductsItem from './ProductsItem/ProductsItem';
 import './Products.scss';
 
-// 아이템에서 이미지의 넓이 또는 이미지의 높이가 큰 지 어떻게 비교할 것인가 ?
-// 이미지 사이즈 크기를 부모에서 map를 돌릴 때 item에서 넘겨줄 것 인가?
-// 아이템에서 이미지가 그려진 다음에 ref로 연결하여 offsetWidth, offsetHeight로 크기를 판단(X)
-
 function Products() {
 
   const slideRef = useRef();
