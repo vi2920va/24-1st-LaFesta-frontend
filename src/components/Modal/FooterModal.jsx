@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../Button/Button';
-import close from './images/close.svg';
+import { FiX } from "react-icons/fi";
 import './FooterModal.scss';
 
 function FooterModal({ data, active, onClose }) {
@@ -20,7 +20,7 @@ function FooterModal({ data, active, onClose }) {
         <div className="modal__wrapper-header">
           <h3 className="modal__wrapper-header__title">{title}</h3>
           <Button className="button__close" onClick={handleClose}>
-            <img src={close} alt="close btn" />
+            <FiX />
           </Button>
           <div className="modal__wrapper-content">
             {description &&
