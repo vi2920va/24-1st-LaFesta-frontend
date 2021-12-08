@@ -1,0 +1,69 @@
+@import "../../../../styles/common.scss";
+
+.collaboration {
+  display: flex;
+  margin-top: 6.250em;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  &__image {
+    flex: 1 1 55%;
+
+    >img {
+      width: 100%;
+
+      @media screen and (max-width: 768px) {
+        height: 100%;
+        width: unset;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-basis: auto;
+      justify-content: center;
+      width: 100%;
+      height: 100vw;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex: 1 1 45%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2.5em;
+    color: #545454;
+
+    @media screen and (max-width: 768px) {
+      flex-basis: auto;
+      padding: calc(100vw / 12) calc(100vw / 25);
+    }
+  }
+
+  &__text {
+    line-height: 1.563em;
+    width: 55%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &__sub-title {
+    letter-spacing: 0.094em;
+    line-height: 1.250em;
+    font-size: 0.625em;
+    font-weight: 600;
+    color: #767676;
+  }
+
+  &__title {
+    line-height: 2.250em;
+    font-size: 1.625em;
+    font-weight: 600;
+    color: #000;
+  }
+}
