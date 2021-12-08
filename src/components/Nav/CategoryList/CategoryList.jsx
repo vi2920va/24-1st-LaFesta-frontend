@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { CATEGORY_DATA } from './data/CATEGORY_DATA';
 import Button from '../../Button/Button';
-import location from './images/location.svg';
-// import user from './images/user.svg';
 import './CategoryList.scss';
 
 function CategoryList({ onMouseOver }) {
