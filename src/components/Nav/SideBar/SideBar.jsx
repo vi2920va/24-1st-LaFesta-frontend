@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import cart from './images/cart.svg';
-import sidebar from './images/sidebar.svg';
 import Button from '../../Button/Button';
 import Portal from '../../Modal/Portal';
 import MenuModal from '../../Modal/MenuModal';
