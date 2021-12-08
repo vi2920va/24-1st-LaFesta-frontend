@@ -13,13 +13,13 @@
     flex-wrap: wrap;
 
     &-item {
-      font-size: 12px;
-      line-height: 24px;
+      font-size: 0.750em;
+      line-height: 1.500em;
       color: #292929;
 
       a::after {
         content: "|";
-        margin: 0 10px;
+        margin: 0 0.625em;
         color: #999;
       }
 
@@ -32,14 +32,14 @@
   .button__language {
 
     img {
-      width: 20px;
-      height: 20px;
-      margin-right: 5px;
+      width: 1.667em;
+      height: 1.667em;
+      margin-right: 0.313em;
       vertical-align: middle;
     }
 
     &-text {
-      font-size: 12px;
+      font-size: 0.750em;
       color: #292929;
       text-decoration: underline;
       vertical-align: middle;

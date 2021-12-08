@@ -18,7 +18,7 @@
     flex: 0 0 auto;
     justify-content: center;
     padding: 5% 0;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 0.063em solid #e5e5e5;
     text-align: center;
 
     @media only screen and(min-width: 768px) {
@@ -36,35 +36,35 @@
     &__content {
       @media only screen and(min-width: 768px) {
         display: flex;
+        align-items: center;
       }
     }
 
 
-    img {
-      width: 40px;
+    svg {
+      font-size: 2.917em;
 
       @media only screen and(min-width: 768px) {
-        position: relative;
-        right: 7px;
-        bottom: 9px;
-        width: 35px;
+        font-size: 2.917em;
       }
     }
 
     &__title {
       padding: 2% 0;
-      font-size: 17.5px;
+      font-size: 1.083em;
       font-weight: 700;
 
       @media only screen and(min-width: 768px) {
         padding: 0 0;
+        display: flex;
+        margin-right: auto;
       }
     }
 
     &__description {
-      margin-bottom: 15px;
+      margin-bottom: 0.938em;
       padding: 2% 16%;
-      font-size: 12px;
+      font-size: 0.750em;
 
       @media only screen and(min-width: 768px) {
         padding: 4% 0;
@@ -72,11 +72,11 @@
     }
 
     .button__kakao {
-      padding: 10px 27px;
-      border: 1px solid #e5e5e5;
-      border-radius: 20px;
-      line-height: 20px;
-      font-size: 14px;
+      padding: 0.625em 1.688em;
+      border: 0.063em solid #e5e5e5;
+      border-radius: 1.250em;
+      line-height: 1.250em;
+      font-size: 0.875em;
       background: #292929;
       color: #fff;
       transition: all 0.3s ease-in-out;
@@ -94,18 +94,18 @@
 
     &-count {
       padding: 4% 0;
-      letter-spacing: 3px;
-      font-size: 9.5px;
+      letter-spacing: 0.188em;
+      font-size: 0.594em;
       font-weight: 600;
       color: #545454;
     }
 
     .button__search {
       width: 100%;
-      line-height: 22px;
+      line-height: 1.375em;
       padding: 2% 0;
-      border: 1px solid #e5e5e5;
-      border-radius: 20px;
+      border: 0.063em solid #e5e5e5;
+      border-radius: 1.250em;
       background: #fff;
       transition: all 0.3s ease-in-out;
 
@@ -143,18 +143,18 @@
 
 
     &-title {
-      margin-bottom: 15px;
-      line-height: 15px;
-      font-size: 9.2px;
+      margin-bottom: 0.938em;
+      line-height: 0.938em;
+      font-size: 0.667em;
       font-weight: 600;
-      letter-spacing: 1px;
+      letter-spacing: 0.100em;
       color: #545454;
     }
 
     .link__item {
       display: block;
       padding: 6% 0;
-      font-size: 12px;
+      font-size: 0.833em;
 
       &:hover {
         text-decoration: underline;
@@ -167,7 +167,7 @@
     .link__item {
       width: calc(100% /2.15);
       padding: 2% 0;
-      font-size: 11.5px;
+      font-size: 0.833em;
     }
 
     @media only screen and(max-width: 767px) {

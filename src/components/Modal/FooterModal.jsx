@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../Button/Button';
-import { FiX } from 'react-icons/fi';
+import { FiX } from "react-icons/fi";
 import './FooterModal.scss';
 
 function FooterModal({ data, active, onClose }) {
@@ -9,12 +9,13 @@ function FooterModal({ data, active, onClose }) {
 
   const handleClose = (click) => {
     if (onClose) {
-      onClose(!click);
+      onClose(!click)
+
     }
   }
 
   return (
-    <div className={`modal ${active && 'active'}`}>
+    <div className={`modal ${active && 'acive'}`}>
       <div className="modal__wrapper">
         <div className="modal__wrapper-header">
           <h3 className="modal__wrapper-header__title">{title}</h3>
