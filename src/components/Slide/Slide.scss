@@ -79,6 +79,7 @@
       font-size: 17px;
       line-height: 17px;
       align-items: center;
+      color: #292929;
 
       @media screen and(max-width: 768px) {
         font-size: 15px;
@@ -103,10 +104,11 @@
     .button--prev {
       font-size: 20px;
       line-height: 20px;
-      color: #fff;
+      color: #292929;
 
       &:disabled {
-        color: #888;
+        color: #CAC8C3;
+
       }
 
       @media screen and(max-width: 768px) {
@@ -117,10 +119,11 @@
     .button--next {
       font-size: 20px;
       line-height: 20px;
-      color: #fff;
+      color: #292929;
 
       &:disabled {
-        color: #888;
+        color: #CAC8C3;
+
       }
     }
 
@@ -128,6 +131,8 @@
       font-size: 17px;
       line-height: 17px;
       padding: 0 5px;
+      color: #292929;
+
 
       @media screen and(max-width: 768px) {
         font-size: 15px;

@@ -1,45 +1,61 @@
 @import "../../styles/common.scss";
 
 .button {
-  &--details {
+  &--details--black {
     @include button-large;
-    padding: 0.5em 0;
+    margin: 0.938em 0 0 0;
+    padding: 0.375em 0.938em;
     border: 0.063em solid #545454;
     background: #292929;
     color: #fff;
 
     &:hover {
-      border: 1px solid transparent;
+      border-color: #e5e5e5;
       background: #fff;
       color: #292929;
     }
   }
 
-  &--plus {
+  &--details--white {
     @include button-large;
     margin: 0.938em 0 0 0;
     padding: 0.375em 0.938em;
     border: 0.063em solid #e5e5e5;
-    background: #292929;
-    color: #fff;
-
-    &--white {
-      @include button-large;
-      margin: 0.938em 0 0 0;
-      padding: 0.375em 0.938em;
-      border: 0.063em solid #e5e5e5;
-      background: #fff;
-      color: #292929;
-
-      &:hover {
-        border-color: #545454;
-        background: #292929;
-        color: #fff;
-      }
-    }
+    background: #fff;
+    color: #292929;
 
     &:hover {
       border-color: #545454;
+      background: #292929;
+      color: #fff;
+    }
+  }
+
+  &--plus--white {
+    @include button-large;
+    margin: 0.938em 0 0 0;
+    padding: 0.375em 0.938em;
+    border: 0.063em solid #e5e5e5;
+    background: #fff;
+    color: #292929;
+
+    &:hover {
+      border-color: #545454;
+      background: #292929;
+      color: #fff;
+    }
+  }
+
+  &--plus--black {
+    @include button-large;
+    margin: 0.938em 0 0 0;
+    padding: 0.375em 0.938em;
+    border: 0.063em solid #545454;
+    background: #292929;
+    color: #fff;
+
+    &:hover {
+      border-color: #e5e5e5;
       background: #fff;
       color: #292929;
     }

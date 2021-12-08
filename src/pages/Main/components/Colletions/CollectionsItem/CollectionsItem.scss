@@ -2,8 +2,14 @@
 
 .collections-item {
   position: relative;
-  padding: 2%;
+  padding: 1.8%;
   width: 48%;
+  height: 100%;
+
+  @media screen and (max-width: 1190px) {
+    padding: 2%;
+
+  }
 
   @media screen and (max-width: 767px) {
     width: 100%;
@@ -11,6 +17,8 @@
   }
 
   &__image {
+    height: calc(100% - 30%);
+
     >img {
       width: 100%;
     }
@@ -20,15 +28,10 @@
     @include flex-column-end;
     align-items: flex-start;
     position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 0 15% 12%;
+    bottom: 8%;
+    left: 11%;
     height: 100%;
-    color: #fff;
-
-    @media screen and (max-width: 1190px) {
-      padding-left: 10%;
-    }
+    z-index: 400;
 
     @media screen and (max-width: 767px) {
       padding-bottom: 10%;
@@ -38,7 +41,6 @@
   &__title {
     font-size: 1.500em;
     font-weight: 600;
-    color: #fff;
 
 
     @media screen and (max-width: 1190px) {
