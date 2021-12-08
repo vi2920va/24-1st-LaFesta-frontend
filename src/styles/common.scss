@@ -42,17 +42,17 @@
 
 
 @mixin button-large {
-  width: 132px;
-  height: 42px;
-  border-radius: 21px;
-  font-size: 14px;
+  width: 8.25em;
+  height: 2.62em;
+  border-radius: 1.31em;
+  font-size: 0.875em;
   transition: all 0.3s ease-in-out;
 }
 
 @mixin count-text {
   display: flex;
   margin-left: auto;
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 600;
   font-family: monospace;
 }

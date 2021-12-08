@@ -2,17 +2,17 @@
   &__title {
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+    justify-content: flex-end;
+    height: 7.188em;
     padding-left: 4%;
-    letter-spacing: 0.5px;
-    font-size: 26px;
+    letter-spacing: 0.031em;
+    font-size: 1.625em;
     font-family: 'Inter',
       sans-serif;
 
     @media screen and (max-width: 1190px) {
-      padding: 0 0 0.5% 4%;
-      font-size: 22px;
-      font-weight: 600;
+      font-size: 1.375em;
+      padding: 0 0 0 4%;
     }
 
     @media screen and (max-width: 768px) {
