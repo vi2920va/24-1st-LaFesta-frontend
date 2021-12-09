@@ -20,8 +20,8 @@
 
 
     img {
-      width: 53px;
-      height: 40px;
+      width: 3.313em;
+      height: 2.500em;
 
       @media only screen and(max-width:1190px) {
         position: absolute;
@@ -30,7 +30,7 @@
     }
 
     &__title {
-      font-size: 20px;
+      font-size: 1.375em;
       font-weight: 600;
       letter-spacing: 0.031em;
 
