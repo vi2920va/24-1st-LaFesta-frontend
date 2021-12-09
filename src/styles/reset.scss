@@ -76,6 +76,12 @@ button {
 }
 
 a {
+  display: block;
   text-decoration: none;
   color: #000
+}
+
+main {
+  position: relative;
+  z-index: 1;
 }
