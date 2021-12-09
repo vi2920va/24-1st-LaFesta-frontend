@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 427px;
+  height: 26.688em;
   padding: 2% 0;
   z-index: 149;
   background: #fff;
@@ -24,7 +24,7 @@
 
       &-title {
         padding: 4% 0;
-        font-size: 9.5px;
+        font-size: 0.594em;
         font-weight: 600;
         color: #545454;
       }
@@ -34,9 +34,9 @@
   .sub__menu {
     &-item {
       padding: 2% 0;
-      font-size: 12px;
-      
-      &:hover{
+      font-size: 0.750em;
+
+      &:hover {
         color: #545454;
       }
     }
