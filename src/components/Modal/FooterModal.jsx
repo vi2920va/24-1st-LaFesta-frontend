@@ -15,7 +15,7 @@ function FooterModal({ data, active, onClose }) {
   }
 
   return (
-    <div className={`modal ${active && 'acive'}`}>
+    <div className={`modal ${active && 'isActive'}`}>
       <div className="modal__wrapper">
         <div className="modal__wrapper-header">
           <h3 className="modal__wrapper-header__title">{title}</h3>

@@ -9,7 +9,7 @@
   z-index: 100;
   opacity: 0;
 
-  &.acive {
+  &.isActive {
     opacity: 1;
   }
 
@@ -50,7 +50,7 @@
 
       li {
         flex: 0 0 33%;
-        margin-bottom:22px;
+        margin-bottom: 22px;
         font-size: 13px;
         color: #292929;
       }
