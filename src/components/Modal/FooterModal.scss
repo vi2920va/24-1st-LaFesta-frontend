@@ -9,9 +9,8 @@
   z-index: 100;
   opacity: 0;
 
-  &.active {
+  &.isActive {
     opacity: 1;
-    z-index: 150;
   }
 
   @media only screen and(min-width: 1191px) {
@@ -51,7 +50,7 @@
 
       li {
         flex: 0 0 33%;
-        margin-bottom:22px;
+        margin-bottom: 22px;
         font-size: 13px;
         color: #292929;
       }
