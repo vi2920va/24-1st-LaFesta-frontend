@@ -1,0 +1,10 @@
+@import "../../../../styles/common.scss";
+
+.products {
+  &__image-list {
+    display: flex;
+    width: max-content;
+    margin-bottom: 5%;
+    transition: transform 0.2s ease-out 0s;
+  }
+}

@@ -1,0 +1,137 @@
+.menu__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 200;
+  transform: translate3d(100%, 0, 0);
+  transition: transform 0.4s ease-out;
+  background: #fff;
+
+  &.is-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate3d(0, 0, 0);
+  }
+
+  &-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+    &.is-open {
+      display: flex;
+      align-items: center;
+      transform: translate3d(0, 0, 0);
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      padding: 4% 0;
+      border-bottom: 0.063em solid hsl(0, 0%, 90%);
+    }
+
+    &__title {
+      font-size: 0.813em;
+      padding-bottom: 1%;
+      color: #292929;
+
+      &.show__title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .home__text,
+      .show__text {
+        text-decoration: underline;
+        color: #292929;
+
+        &::after {
+          content: "/";
+          display: inline-block;
+          margin: 0 0.250em;
+          color: #c8c8c8;
+        }
+      }
+    }
+  }
+
+  &-footer {
+    width: 100vw;
+    height: 100%;
+
+    li {
+      border-top: 0.063em solid #f4f4f4;
+      border-bottom: 0.063em solid #f4f4f4;
+
+      svg {
+        width: 1.875em;
+        margin: 0 0.938em;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        padding: 5% 12.5%;
+      }
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0.625em;
+    font-size: 1.188em;
+
+
+    &__close {
+      display: none;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      padding: 2% 0;
+      color: #000;
+
+      &:nth-of-type(5n) {
+        font-weight: 500;
+
+        svg {
+          display: none;
+        }
+      }
+
+      svg {
+        margin-left: auto;
+        font-size: 1.313em;
+        color: #292929;
+
+      }
+    }
+  }
+
+  .button__arrow {
+    margin-left: auto;
+
+    >svg {
+      width: 1.250em;
+      transform: rotate(180deg);
+    }
+  }
+
+  .button__close {
+    margin-left: auto;
+
+    svg {
+      font-size: 1.313em;
+    }
+  }
+}

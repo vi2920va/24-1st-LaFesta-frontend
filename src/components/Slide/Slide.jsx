@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import Button from '../Button/Button';
 import './Slide.scss';
 
 function Slide({ title, list, name, children, onSlide }) {
+  const [slideBg, setSlideBg] = useState('');
   const [slideCount, setSlideCount] = useState(1);
+
   const handleNextClick = () => {
     if (slideCount < list.length) {
       setSlideCount(prev => prev + 1);
@@ -17,11 +20,18 @@ function Slide({ title, list, name, children, onSlide }) {
     }
   };
 
+  useEffect(() => {
+    let slideItem = list.find(item => item.id === slideCount);
+    setSlideBg(slideItem && slideItem.background);
+
+  }, [list, slideCount]);
+
   if (list.length === 0) {
     return null;
   }
+
   return (
-    <section className="slide">
+    <section className={`slide`} style={{ background: slideBg }}>
       <div className={`slide-wrapper__${name}`}>
         <h3 className={`slide-title__${name}`}>{title}</h3>
         <ol className={`slide-count__list-${name}`}>
@@ -31,17 +41,15 @@ function Slide({ title, list, name, children, onSlide }) {
               disabled={slideCount === 1}
               onClick={hadlePrevClick}
             >
-              <i className="fas fa-chevron-left" />
+              <FiChevronLeft />
             </Button>
           </li>
-          <li className="start-count">
-            <span>{slideCount}</span>
-          </li>
-          <li className="center">
-            <span>/</span>
-          </li>
-          <li className="end-count">
-            <span>{list.length}</span>
+          <li className="count--item">
+            <div className="count--item__text">
+              <span>{slideCount}</span>
+              <span>/</span>
+              <span>{list.length}</span>
+            </div>
           </li>
           <li>
             <Button
@@ -49,7 +57,7 @@ function Slide({ title, list, name, children, onSlide }) {
               onClick={handleNextClick}
               disabled={slideCount === list.length}
             >
-              <i className="fas fa-chevron-right" />
+              <FiChevronRight />
             </Button>
           </li>
         </ol>

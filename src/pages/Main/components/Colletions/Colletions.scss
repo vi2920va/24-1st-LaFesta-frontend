@@ -1,0 +1,32 @@
+.collections {
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 7.188em;
+    padding-left: 4%;
+    letter-spacing: 0.031em;
+    font-size: 1.625em;
+    font-family: 'Inter',
+      sans-serif;
+
+    @media screen and (max-width: 1190px) {
+      font-size: 1.375em;
+      padding: 0 0 0 4%;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0 0 0 6%;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}

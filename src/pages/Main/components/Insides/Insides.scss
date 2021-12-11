@@ -1,0 +1,8 @@
+.insides__image-list {
+  display: flex;
+  padding: 0 0 3% 4%;
+
+  @media screen and(max-width:768px) {
+    padding: 0;
+  }
+}
