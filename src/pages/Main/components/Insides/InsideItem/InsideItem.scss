@@ -1,5 +1,16 @@
 .insides-item {
   display: flex;
+  animation: fadeout 3s;
+
+  @keyframes fadeout {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
 
   @media screen and(max-width:768px) {
     padding: 3% 0 2% 0;
@@ -31,6 +42,7 @@
     >img {
       width: 100%;
       height: 100%;
+      object-fit: cover;
     }
   }
 
@@ -40,6 +52,7 @@
     flex-direction: column;
     justify-content: flex-end;
     padding-left: 4%;
+    margin-bottom: 1.250em;
 
     @media screen and(max-width:1190px) {
       width: 36%;

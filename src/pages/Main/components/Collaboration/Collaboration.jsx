@@ -22,7 +22,7 @@ function Collaboration() {
             스니커즈 L001과 함께했습니다. 라코스테의 새로운 컬렉션과 함께한
             감각적인 이들의 가을 룩도 놓치지 마세요.
           </p>
-          <Button name="자세히 보기" className="button--plus" />
+          <Button name="자세히 보기" className="button--plus--black" />
         </div>
       </div>
     </section>

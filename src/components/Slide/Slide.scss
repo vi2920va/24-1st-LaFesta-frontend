@@ -2,6 +2,16 @@
 
 .slide {
   margin-top: 0.5%;
+  opacity: 0;
+  transition: opacity ease-out 0.6s 0.9s;
+  will-change: opacity;
+
+  &.isActive {
+    opacity: 1;
+    pointer-events: all;
+    transition: opacity ease-out 0.6s 0.6s;
+
+  }
 
   @media screen and(max-width:768px) {
     margin-top: 5%;
@@ -22,6 +32,7 @@
     padding: 4% 2% 1.5% 0;
     z-index: 1;
     color: #fff;
+
 
     @media screen and(max-width:768px) {
       padding-top: 6%;
