@@ -45,9 +45,11 @@ function SideBar({ menu }) {
           <FiMenu />
         </Button>
       </div>
-      <Portal>
-        <MenuModal active={active} onClose={handleCloseMenu} menu={menu} />
-      </Portal>
+      {active &&
+        <Portal>
+          <MenuModal active={active} onClose={handleCloseMenu} menu={menu} />
+        </Portal>
+      }
     </>
   );
 }
