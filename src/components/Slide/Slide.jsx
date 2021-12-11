@@ -31,7 +31,7 @@ function Slide({ title, list, name, children, onSlide }) {
   }
 
   return (
-    <section className="slide" style={{ background: slideBg }}>
+    <section className={`slide`} style={{ background: slideBg }}>
       <div className={`slide-wrapper__${name}`}>
         <h3 className={`slide-title__${name}`}>{title}</h3>
         <ol className={`slide-count__list-${name}`}>

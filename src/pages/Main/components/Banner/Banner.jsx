@@ -10,7 +10,7 @@ function Banner() {
       <div className="banner__content">
         <strong>신상품 아이템 구매시, 스포츠 텀블러 증정</strong>
         <p>~ 10월 10일까지</p>
-        <Button className="button--details" name="자세히 보기" />
+        <Button className="button--details--black" name="자세히 보기" />
       </div>
     </section>
   );
